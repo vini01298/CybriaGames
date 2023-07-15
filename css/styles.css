@@ -33,7 +33,7 @@ h1, h2 {
 #gamesContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     padding-left: 20px; /* Some padding to not stick to the extreme left */
     margin-top: 20px;
     gap: 50px; /* Adds some space between each game */
