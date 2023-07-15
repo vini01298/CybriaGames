@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+}
+
+header {
+    background-color: #444;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0;
+    color: #fff;
+}
+
+#searchInput {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+#gamesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Aligns the content to the start of the container */
+    padding-left: 20px; /* Some padding to not stick to the extreme left */
+    margin-top: 20px;
+    gap: 50px; /* Adds some space between each game */
+}
+
+.game {
+    flex: 1 0 30%; /* This ensures that each row will display at most 3 games. Each game will take up around 30% of the row width. */
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #383838;
+    transition: background-color 0.3s ease;
+}
+
+.game:hover {
+    background-color: #fff;
+}
+
+.game img {
+    width: 100%;
+    height: auto;
+}
+
+.game a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.game:hover a {
+    color: #333;
+}
+
+nav a {
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;  /* Increase the font size */
+    margin: 0 10px;   /* Add horizontal margins for spacing */
+}
+
+nav a:hover {
+    color: #0ec2e1;
+}
+
+.letter {
+  margin: 20px 0; /* Adds vertical spacing above and below the category headers */
+  color: #fff;
+  text-align: center;
+}
+
