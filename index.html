@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CybriaGames</title>
+  <meta charset="UTF=8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CybriaGames Is Another unblocked games site with games ordered from a-z">
+  <meta name="keywords" content="games, unblocked games, bypasss">
+  <meta name="author" content="CybriaTech">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CybriaGames</h1>
+        <input id="searchInput" type="text" placeholder="Search For A Game...">
+      <nav>
+      <a href="/configure">Configure</a>
+        <a href="/proxy">Proxy</a>
+      </nav>
+    </header>
+    <main>
+<div id="gamesContainer">
+    <div class="game-category">
+        <h2>A</h2>
+        <div class="game">
+            <img src="/img/amongus.jpg" alt="amongus (so funny)">
+            <p class="game-title"><a href="/games/amongus">Among Us</a></p>
+        </div>
+    </div>
+    <div class="game-category">
+        <h2>B</h2>
+        <div class="game">
+            <img src="#" alt="Game B image">
+            <p class="game-title"><a href="#">Game B</a></p>
+        </div>
+    </div>
+</div>
+    </main>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchInput');
+    const gameElements = document.querySelectorAll('.game');
+    const gameCategories = document.querySelectorAll('.game-category');
+
+    searchInput.addEventListener('input', function() {
+        const searchValue = this.value.toLowerCase();
+
+        gameElements.forEach(gameElement => {
+            const gameTitle = gameElement.querySelector('.game-title').textContent.toLowerCase();
+            
+            if (gameTitle.includes(searchValue)) {
+                gameElement.style.display = 'block';
+            } else {
+                gameElement.style.display = 'none';
+            }
+        });
+
+        gameCategories.forEach(category => {
+            const gamesInCategory = Array.from(category.querySelectorAll('.game'));
+            const anyVisible = gamesInCategory.some(game => game.style.display !== 'none');
+            
+            if (anyVisible) {
+                category.style.display = 'block';
+            } else {
+                category.style.display = 'none';
+            }
+        });
+    });
+});
+
+  </script>
+</body>
+</html>
