@@ -40,14 +40,19 @@ h1, h2 {
 }
 
 .game {
-    flex: 1 0 30%; /* This ensures that each row will display at most 3 games. Each game will take up around 30% of the row width. */
+    width: 200px;
     margin: 10px;
     padding: 15px;
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 20px; /* This will give a round corner look to your game button */
     text-align: center;
     background-color: #383838;
     transition: background-color 0.3s ease;
+    overflow: hidden; /* This will keep the image within the border-radius of the .game container */
+}
+
+.game-title {
+  font-size: 20px;
 }
 
 .game:hover {
@@ -55,8 +60,12 @@ h1, h2 {
 }
 
 .game img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Adjusted width */
+    height: 1000%; /* Adjusted height */
+    object-fit: cover;
+    border-radius: 20px; /* This will give a round corner look to your image */
+    margin: auto; /* This will center the image */
+    display: block; /* This is required for margin: auto; to work */
 }
 
 .game a {
