@@ -30,18 +30,22 @@ h1, h2 {
   background-color: #fff;
 }
 
-#gamesContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: minmax(200px, auto);
-    grid-gap: 20px;
-    grid-auto-flow: dense;
+#gamesContainer, .categoryContainer {
+    column-count: 4;
+    column-gap: 1em;
     padding: 20px;
     margin-top: 20px;
 }
 
-.game {
+.game, .category {
+    background: #eee;
+    display: inline-block;
+    margin: 0 0 1em;
     width: 100%;
+    box-sizing: border-box;
+}
+
+.game {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 20px;
@@ -61,7 +65,7 @@ h1, h2 {
 
 .game img {
   width: 100%;
-  height: 1000%;
+  height: auto;
   object-fit: cover;
   border-radius: 20px;
   margin: auto;
@@ -97,16 +101,7 @@ nav a:hover {
   text-align: center;
 }
 
-.categoryContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 20px;
-}
-
 .category {
-  flex: 0 0 calc(100% / 7);
-  max-width: calc(100% / 7);
   text-align: center;
   color: #fff;
   font-size: 20px;
