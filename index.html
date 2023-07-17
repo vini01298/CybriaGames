@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 <body>
@@ -350,5 +351,15 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
   </script>
+<script>
+var grid = document.querySelector('#gamesContainer');
+var msnry = new Masonry( grid, {
+  itemSelector: '.game',
+  columnWidth: 200,
+  gutter: 20,
+  fitWidth: true
+});
+</script>
+
 </body>
 </html>
