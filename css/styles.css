@@ -46,6 +46,7 @@ h1, h2 {
 }
 
 .game {
+    width: 200px;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 20px;
