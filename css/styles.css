@@ -27,9 +27,9 @@ h1, h2 {
 }
 
 #gamesContainer {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 2 games per row by default */
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* This will center the games */
   padding: 20px;
   margin-top: 20px;
 }
@@ -38,8 +38,8 @@ h1, h2 {
   width: 200px;
   margin: 10px;
   padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 20px;
+  border: 0.5px solid #ddd; /* Make the border smaller */
+  border-radius: 10px; /* Make the border radius smaller */
   text-align: center;
   background-color: #383838;
   transition: background-color 0.3s ease;
@@ -58,7 +58,7 @@ h1, h2 {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 10px; /* Make the border radius smaller */
   margin: auto;
   display: block;
 }
