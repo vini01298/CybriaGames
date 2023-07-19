@@ -1,3 +1,8 @@
+
+* {
+    box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto Condensed', Arial, sans-serif;
   background-color: #333;
@@ -27,9 +32,9 @@ h1, h2 {
 }
 
 #gamesContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center the games */
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* This makes 8 games per row */
+  gap: 10px;
   padding: 20px;
   margin-top: 20px;
 }
