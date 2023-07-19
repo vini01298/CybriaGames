@@ -28,10 +28,28 @@ h1, h2 {
 
 #gamesContainer {
   display: grid;
-  grid-template-columns: repeat(8, 1fr); /* This makes 8 games per row */
+  grid-template-columns: repeat(2, 1fr); /* 2 games per row by default */
   gap: 10px;
   padding: 20px;
   margin-top: 20px;
+}
+
+@media (min-width: 600px) {
+  #gamesContainer {
+    grid-template-columns: repeat(4, 1fr); /* 4 games per row on screens wider than 600px */
+  }
+}
+
+@media (min-width: 900px) {
+  #gamesContainer {
+    grid-template-columns: repeat(6, 1fr); /* 6 games per row on screens wider than 900px */
+  }
+}
+
+@media (min-width: 1200px) {
+  #gamesContainer {
+    grid-template-columns: repeat(8, 1fr); /* 8 games per row on screens wider than 1200px */
+  }
 }
 
 .game {
