@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Embed | CybriaGames</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="CybriaGames Is Another unblocked games site with games and apps etc" name="description"/>
+<meta content="games, unblocked games, bypasss" name="keywords"/>
+<meta content="CybriaTech" name="author"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<link href="/css/styles.css" rel="stylesheet" type="text/css"/>
+<style>
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>CybriaGames</h1>
+<input id="searchInput" placeholder="Search For A Game..." type="text"/>
+<nav>
+<a href="/configure">Configure</a>
+<a href="/apps">Apps</a>
+<a href="/embed/games">Embed</a>
+</nav>
+</header>
+<main>
+<h1 style="text-align: center;">Choose What To Embed:</h1>
+<br>
+<div id="gamesContainer"><div class="game">
+<a href="/embed/games">
+<img alt="embed games" src="/img/games.png"/>
+<p class="game-title">Embed Games</p></a>
+</div>
+<div id="gamesContainer"><div class="game">
+<a href="/embed/apps">
+<img alt="embed apps" src="/img/apps.png"/>
+<p class="game-title">Embed Apps</p></a>
+</div>
+<div id="gamesContainer"><div class="game">
+<a href="">
+<img alt="embed site" src="/img/site.png"/>
+<p class="game-title">Embed Website</p></a>
+</div>
+</main>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Embed Code:</p>
+    <textarea id="iframeCode" readonly>
+      <iframe src="https://cybriagames.netlify.app" width="500" height="500"></iframe>
+    </textarea>
+    <button id="copyBtn">Copy</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchInput');
+    const gameElements = document.querySelectorAll('.game');
+    const gameCategories = document.querySelectorAll('.game-category');
+
+    searchInput.addEventListener('input', function() {
+        const searchValue = this.value.toLowerCase();
+
+        gameElements.forEach(gameElement => {
+            const gameTitle = gameElement.querySelector('.game-title').textContent.toLowerCase();
+            
+            if (gameTitle.includes(searchValue)) {
+                gameElement.style.display = 'block';
+            } else {
+                gameElement.style.display = 'none';
+            }
+        });
+
+        gameCategories.forEach(category => {
+            const gamesInCategory = Array.from(category.querySelectorAll('.game'));
+            const anyVisible = gamesInCategory.some(game => game.style.display !== 'none');
+            
+            if (anyVisible) {
+                category.style.display = 'block';
+            } else {
+                category.style.display = 'none';
+            }
+        });
+    });
+    
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.querySelector('#gamesContainer .game a[href="/embed/site"]');
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function(event) {
+      event.preventDefault();
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    // Copy iframe code
+    document.getElementById("copyBtn").addEventListener("click", function(){
+      const textarea = document.getElementById('iframeCode');
+      textarea.select();
+      document.execCommand('copy');
+      alert("Copied the embed code");
+    });
+
+});
+
+</script>
+
+<script>
+var elem = document.querySelector('.grid');
+var msnry = new Masonry( elem, {
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});
+</script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+</body>
+</html>
