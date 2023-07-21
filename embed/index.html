@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 <title>Embed | CybriaGames</title>
@@ -14,26 +13,36 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
 <link href="/css/styles.css" rel="stylesheet" type="text/css"/>
 <style>
+body {
+  background-color: #1b1b1b;
+  color: #ffffff;
+}
+
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
 }
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  background-color: #333333;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%;
+  transition: transform 0.3s ease-in-out;
 }
 
 /* The Close Button */
@@ -42,13 +51,19 @@
   float: right;
   font-size: 28px;
   font-weight: bold;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  padding: 0 0.3em;
+  line-height: 0.8;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
+  background-color: #f00;
+  border-color: #f00;
 }
 </style>
 </head>
@@ -132,9 +147,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Get the modal
     var modal = document.getElementById("myModal");
+    var modalContent = modal.querySelector('.modal-content');
 
     // Get the button that opens the modal
-    var btn = document.querySelector('#gamesContainer .game a[href="/embed/site"]');
+    var btn = document.querySelector('#gamesContainer .game a[href="/embed/website"]');
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
@@ -143,17 +159,20 @@ document.addEventListener('DOMContentLoaded', function() {
     btn.onclick = function(event) {
       event.preventDefault();
       modal.style.display = "block";
+      modalContent.style.transform = "translate(-50%, -50%) scale(1)";
     }
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
-      modal.style.display = "none";
+      modalContent.style.transform = "translate(-50%, -50%) scale(0.8)";
+      setTimeout(function() { modal.style.display = "none"; }, 300);
     }
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
       if (event.target == modal) {
-        modal.style.display = "none";
+        modalContent.style.transform = "translate(-50%, -50%) scale(0.8)";
+        setTimeout(function() { modal.style.display = "none"; }, 300);
       }
     }
 
@@ -162,20 +181,9 @@ document.addEventListener('DOMContentLoaded', function() {
       const textarea = document.getElementById('iframeCode');
       textarea.select();
       document.execCommand('copy');
-      alert("IFrame Code Copied!");
+      alert("IFrame Code Copied to Clipboard!");
     });
-
-});
-
-</script>
-
-<script>
-var elem = document.querySelector('.grid');
-var msnry = new Masonry( elem, {
-  itemSelector: '.grid-item',
-  columnWidth: 200
 });
 </script>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </body>
 </html>
