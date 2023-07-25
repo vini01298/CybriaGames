@@ -2,6 +2,8 @@ body {
   font-family: 'Roboto Condensed', Arial, sans-serif;
   background-color: #333;
   color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -9,7 +11,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: #444;
-  padding: 20px;
+  padding: 10px 20px; /* Reduced padding for a more compact header */
 }
 
 h1, h2 {
@@ -18,7 +20,7 @@ h1, h2 {
 }
 
 #searchInput {
-  width: 150px;
+  width: 200px; /* Slightly longer search bar */
   padding: 5px;
   font-size: 16px;
   border: none;
@@ -28,9 +30,21 @@ h1, h2 {
 }
 
 .title {
-  font-size: 1.5em;
+  font-size: 1.1em; /* Increased title size */
   color: #fff;
   text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center; /* Align nav items vertically in the center */
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px; /* Larger font size for hyperlinks */
+  margin-left: 20px;
 }
 
 #gamesContainer {
@@ -79,17 +93,6 @@ h1, h2 {
 
 .game:hover a {
   color: #333;
-}
-
-nav {
-  display: flex;
-}
-
-nav a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-  margin-left: 20px;
 }
 
 nav a:hover {
