@@ -47,6 +47,134 @@ nav a {
   margin-left: 20px;
 }
 
+#searchInput {
+  width: 200px; /* Slightly longer search bar */
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  background-color: #fff;
+  margin-left: 20px;
+}
+
+.title {
+  font-size: 1.1em; /* Increased title size */
+  color: #fff;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center; /* Align nav items vertically in the center */
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px; /* Larger font size for hyperlinks */
+  margin-left: 20px;
+}
+
+#searchInput {
+  width: 200px; /* Slightly longer search bar */
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  background-color: #fff;
+  margin-left: 20px;
+}
+
+.title {
+  font-size: 1.1em; /* Increased title size */
+  color: #fff;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center; /* Align nav items vertically in the center */
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px; /* Larger font size for hyperlinks */
+  margin-left: 20px;
+}
+
+#searchInput {
+  width: 200px; /* Slightly longer search bar */
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  background-color: #fff;
+  margin-left: 20px;
+}
+
+.title {
+  font-size: 1.1em; /* Increased title size */
+  color: #fff;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center; /* Align nav items vertically in the center */
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px; /* Larger font size for hyperlinks */
+  margin-left: 20px;
+}
+
+#searchInput {
+  width: 200px; /* Slightly longer search bar */
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  background-color: #fff;
+  margin-left: 20px;
+}
+
+.title {
+  font-size: 1.1em; /* Increased title size */
+  color: #fff;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center; /* Align nav items vertically in the center */
+  margin-right: 20px; /* Move nav items to the right side of the header */
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px; /* Larger font size for hyperlinks */
+  margin-left: 20px;
+}
+
+#searchInput {
+  width: 200px; /* Slightly longer search bar */
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.title {
+  font-size: 1.1em; /* Increased title size */
+  color: #fff;
+  text-decoration: none;
+}
+
 #gamesContainer {
   display: flex;
   flex-wrap: wrap;
