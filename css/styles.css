@@ -144,7 +144,7 @@ nav a:hover {
   padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start; /* Align links and GitHub logo to the left */
   position: fixed;
   bottom: 0;
   left: 0;
@@ -153,6 +153,8 @@ nav a:hover {
 
 .footer-links {
   display: flex;
+  align-items: center;
+  margin-right: auto; /* Push the links to the left */
 }
 
 .footer-links a {
@@ -163,6 +165,7 @@ nav a:hover {
 
 .github-logo {
   font-size: 24px;
+  margin-left: 20px; /* Add some spacing between links and GitHub logo */
 }
 
 .github-logo a {
