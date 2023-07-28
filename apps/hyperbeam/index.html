@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyperbeam | CybriaGames</title>
+  <link rel="icon" type="image/x-icon" href="/apps/logo/hyperbeam.webp">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    #hyperbeam-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    #hyperbeam {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="hyperbeam-container">
+    <iframe id="hyperbeam" src=""></iframe>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    const apiKey = 'sk_live_dAgOHIP15nFgEtl188knmJzroAJjf-cEPKTsncLDcUo';
+    
+    const countdownSeconds = 10;
+
+    function loadHyperbeam(apiKey) {
+      const apiUrl = `https://api.example.com/hyperbeam?key=${apiKey}`;
+      $('#hyperbeam').on('load', function() {
+        $('#countdown').hide();
+        $(this).show();
+      });
+      $('#hyperbeam').attr('src', apiUrl);
+    }
+
+    function updateCountdown(seconds) {
+      $('#countdown').text(`Hyperbeam will activate in ${seconds} seconds.`);
+    }
+
+    $(document).ready(function() {
+      let secondsRemaining = countdownSeconds;
+
+      updateCountdown(secondsRemaining);
+
+      const countdownInterval = setInterval(function() {
+        secondsRemaining--;
+        if (secondsRemaining <= 0) {
+          clearInterval(countdownInterval);
+          loadHyperbeam(apiKey);
+        } else {
+          updateCountdown(secondsRemaining);
+        }
+      }, 1000);
+    });
+  </script>
+</body>
+</html>
