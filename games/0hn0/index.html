@@ -2,7 +2,6 @@
 <html>
 <head>
   <title>0H N0 | CybriaGames</title>
-  <link rel="stylesheet" href="/games/0hn0/css/styles.css">
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="CybriaGames Is Another unblocked games site with games and apps etc" name="description"/>
@@ -52,6 +51,10 @@
       border: none;
       border-radius: 5px;
     }
+    .fullscreen-btn {
+      font-size: 24px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -67,15 +70,16 @@
   </header>
   <main>
     <div id="gamesContainer">
-      <iframe src="https://cybriagames.netlify.app/games/0hn0.html"></iframe>
+      <iframe src="https://cybriagames.netlify.app/games/0hn0.html" id="gameIframe"></iframe>
       <p class="game-title">0h n0</p>
       <button class="embed-btn" onclick="copyEmbedCode()">Embed Game</button>
+      <i class="fas fa-expand fullscreen-btn" onclick="toggleFullscreen()"></i>
     </div>
   </main>
   <script>
     function copyEmbedCode() {
-      const iframeSrc = document.querySelector('iframe').src;
-      const embedCode = `<iframe src="https://cybriagames.netlify.app/games/0hn0.html" frameborder="0" width="100%" height="600px"></iframe>`;
+      const iframeSrc = document.getElementById('gameIframe').src;
+      const embedCode = `<iframe src="https://cybriagames.netlify.app/games//0hn0/0hn0.html" frameborder="0" width="100%" height="600px"></iframe>`;
       copyToClipboard(embedCode);
       alert("Embed code copied to clipboard!");
     }
@@ -87,6 +91,19 @@
       el.select();
       document.execCommand("copy");
       document.body.removeChild(el);
+    }
+
+    function toggleFullscreen() {
+      const iframe = document.getElementById('gameIframe');
+      if (!document.fullscreenElement) {
+        iframe.requestFullscreen().catch(err => {
+          console.log('Error attempting to enable full-screen mode:', err);
+        });
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+      }
     }
   </script>
 </body>
