@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>0H N0 | CybriaGames</title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="CybriaGames Is Another unblocked games site with games and apps etc" name="description"/>
+  <meta content="games, unblocked games, bypasss" name="keywords"/>
+  <meta content="CybriaTech" name="author"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTQ60TS6SP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NTQ60TS6SP');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4874616183592939" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="/css/styles.css" rel="stylesheet" type="text/css"/>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    iframe {
+      width: 90%;
+      height: 70%;
+      border: none;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .game-title {
+      text-align: center;
+      margin: 10px 0;
+    }
+    .embed-btn {
+      display: block;
+      margin: 0 auto;
+      width: 150px;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="title" href="/">
+      <h1>CybriaGames</h1>
+    </a>
+    <nav>
+      <a href="/configure">Configure</a>
+      <a href="/">Proxy</a>
+    </nav>
+    <input id="searchInput" placeholder="Search For A Game..." type="text"/>
+  </header>
+  <main>
+    <div id="gamesContainer">
+      <iframe src="https://cybriagames.netlify.app/games/0hn0.html"></iframe>
+      <p class="game-title">0h n0</p>
+      <button class="embed-btn" onclick="copyEmbedCode()">Embed Game</button>
+    </div>
+  </main>
+  <script>
+    function copyEmbedCode() {
+      const iframeSrc = document.querySelector('iframe').src;
+      const embedCode = `<iframe src="https://cybriagames.netlify.app/games/0hn0.html" frameborder="0" width="100%" height="600px"></iframe>`;
+      copyToClipboard(embedCode);
+      alert("Embed code copied to clipboard!");
+    }
+
+    function copyToClipboard(text) {
+      const el = document.createElement("textarea");
+      el.value = text;
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand("copy");
+      document.body.removeChild(el);
+    }
+  </script>
+</body>
+</html>
