@@ -232,7 +232,7 @@
             },
             boundary: [0, 0, 0, 0.1],
             accent: [216, 140, 249],
-            folder: "resources/ski",
+            folder: "resources%20/ski",
           },
           surf: {
             gradient: {
@@ -246,7 +246,7 @@
             },
             boundary: [255, 255, 255, 0.2],
             accent: [141, 249, 196],
-            folder: "resources/surf",
+            folder: "resources%20/surf",
           },
         };
 
