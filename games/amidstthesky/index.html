@@ -18,17 +18,21 @@
             padding: 0px;
             border: 0px;
             overflow: hidden; /* Hide scroll bars */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
         canvas {
-            image-rendering: optimizeSpeed;
+            image-rendering: optimizeQuality; /* Improved quality */
             -webkit-interpolation-mode: nearest-neighbor;
             -ms-touch-action: none;
             margin: 0px;
             padding: 0px;
             border: 0px;
             display: block; /* Make canvas a block element */
-            width: 100vw;
-            height: 100vh;
+            width: 100%;
+            height: 100%;
         }
         div.gm4html5_div_class {
             margin: 0px;
