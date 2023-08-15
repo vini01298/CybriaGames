@@ -138,20 +138,21 @@ nav a:hover {
   width: 300px;
 }
 
-#searchIcon {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  color: #444;
-  margin-right: 10px;
-}
-
 #searchInput {
   flex: 1;
   border: none;
   font-size: 16px;
   padding: 5px;
   background-color: transparent;
+}
+
+#searchButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  order: 2; /* Adjust the order to move the button to the right */
 }
 
 #searchButton i {
