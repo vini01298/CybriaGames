@@ -1,13 +1,13 @@
 $(document).ready(function() {
   if ($(".error-container").length > 0) {
     $.ajax({
-      url: "https://cybriagames.netlify.app/index.html",
+      url: "404.html", // Update the URL to the path of your 404.html page
       dataType: "html",
       success: function(data) {
         $(".error-container").html(data);
       },
       error: function() {
-        console.log("Error loading main page content.");
+        console.log("Error loading 404 page content.");
       }
     });
   }
