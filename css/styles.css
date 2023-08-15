@@ -139,6 +139,9 @@ nav a:hover {
 }
 
 #searchIcon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
   color: #444;
   margin-right: 10px;
 }
@@ -149,12 +152,6 @@ nav a:hover {
   font-size: 16px;
   padding: 5px;
   background-color: transparent;
-}
-
-#searchButton {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
 }
 
 #searchButton i {
