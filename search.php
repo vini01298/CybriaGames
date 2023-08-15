@@ -64,6 +64,46 @@
       ?>
     </div>
   </main>
-  <!-- ... Your existing scripts ... -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchInput');
+    const gameElements = document.querySelectorAll('.game');
+    const gameCategories = document.querySelectorAll('.game-category');
+
+    searchInput.addEventListener('input', function() {
+        const searchValue = this.value.toLowerCase();
+
+        gameElements.forEach(gameElement => {
+            const gameTitle = gameElement.querySelector('.game-title').textContent.toLowerCase();
+            
+            if (gameTitle.includes(searchValue)) {
+                gameElement.style.display = 'block';
+            } else {
+                gameElement.style.display = 'none';
+            }
+        });
+
+        gameCategories.forEach(category => {
+            const gamesInCategory = Array.from(category.querySelectorAll('.game'));
+            const anyVisible = gamesInCategory.some(game => game.style.display !== 'none');
+            
+            if (anyVisible) {
+                category.style.display = 'block';
+            } else {
+                category.style.display = 'none';
+            }
+        });
+    });
+});
+
+  </script>
+<script>
+var elem = document.querySelector('.grid');
+var msnry = new Masonry( elem, {
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});
+</script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </body>
 </html>
