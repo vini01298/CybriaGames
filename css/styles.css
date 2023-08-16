@@ -162,8 +162,10 @@ nav a:hover {
   margin-left: auto;
 }
 
+/* Adjust the margin to properly align the search icon */
 #searchButton i {
   color: #444;
+  margin-left: auto;
 }
 
 .error-container {
