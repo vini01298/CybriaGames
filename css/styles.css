@@ -127,7 +127,7 @@ nav a:hover {
   align-items: center;
   background-color: #fff;
   border-radius: 8px;
-  margin-left: auto; /* Align search icon to the right */
+  margin-left: auto; /* Align search container to the right */
   margin-right: 20px;
   padding: 5px;
   width: 300px;
@@ -147,15 +147,11 @@ nav a:hover {
   cursor: pointer;
   padding: 0;
   margin: 0;
-}
-
-#searchButton {
-  margin-left: auto;
+  margin-left: auto; /* Align search icon to the right */
 }
 
 #searchButton i {
   color: #444;
-  margin-left: auto;
 }
 
 .error-container {
