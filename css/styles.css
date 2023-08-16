@@ -28,7 +28,7 @@ h1, h2 {
 nav {
   display: flex;
   align-items: center;
-  margin-left: auto; /* Align nav links to the right */
+  justify-content: flex-end; /* Align nav links to the right */
 }
 
 nav a {
@@ -147,11 +147,15 @@ nav a:hover {
   cursor: pointer;
   padding: 0;
   margin: 0;
-  margin-left: auto; /* Align search icon to the right */
+}
+
+#searchButton {
+  margin-left: auto;
 }
 
 #searchButton i {
   color: #444;
+  margin-left: auto;
 }
 
 .error-container {
