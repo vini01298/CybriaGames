@@ -28,7 +28,6 @@ h1, h2 {
 nav {
   display: flex;
   align-items: center; /* Align nav items vertically in the center */
-  margin-left: auto; /* Move nav items to the right side of the header */
 }
 
 nav a {
@@ -36,12 +35,6 @@ nav a {
   color: #fff;
   font-size: 18px; /* Larger font size for hyperlinks */
   margin-left: 20px;
-}
-
-.title {
-  font-size: 1.1em; /* Increased title size */
-  color: #fff;
-  text-decoration: none;
 }
 
 #gamesContainer {
@@ -154,7 +147,6 @@ nav a:hover {
   cursor: pointer;
   padding: 0;
   margin: 0;
-  /* Remove the 'order' property that was used previously */
 }
 
 /* Add this rule to align the button to the right */
