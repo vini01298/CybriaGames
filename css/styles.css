@@ -27,7 +27,8 @@ h1, h2 {
 
 nav {
   display: flex;
-  align-items: center; /* Align nav items vertically in the center */
+  align-items: center;
+  margin-left: auto; /* Align nav links to the right */
 }
 
 nav a {
@@ -126,9 +127,8 @@ nav a:hover {
   align-items: center;
   background-color: #fff;
   border-radius: 8px;
-  /* Updated margin to push the search container to the right */
-  margin-left: auto;
-  margin-right: 20px; /* Add this line to align to the right */
+  margin-left: auto; /* Align search icon to the right */
+  margin-right: 20px;
   padding: 5px;
   width: 300px;
 }
@@ -149,19 +149,12 @@ nav a:hover {
   margin: 0;
 }
 
-/* Add this rule to align the button to the right */
 #searchButton {
   margin-left: auto;
 }
 
-/* Adjust the margin to properly align the search icon */
 #searchButton i {
   color: #444;
-  /* Remove margin-left property */
-}
-
-/* Adjust the margin to properly align the search icon */
-#searchIcon {
   margin-left: auto;
 }
 
