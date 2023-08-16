@@ -133,7 +133,9 @@ nav a:hover {
   align-items: center;
   background-color: #fff;
   border-radius: 8px;
-  margin-left: 20px;
+  /* Updated margin to push the search container to the right */
+  margin-left: auto;
+  margin-right: 20px; /* Add this line to align to the right */
   padding: 5px;
   width: 300px;
 }
@@ -152,7 +154,16 @@ nav a:hover {
   cursor: pointer;
   padding: 0;
   margin: 0;
-  order: 2; /* Adjust the order to move the button to the right */
+  /* Remove the 'order' property that was used previously */
+}
+
+/* Add this rule to align the button to the right */
+#searchButton {
+  margin-left: auto;
+}
+
+#searchButton i {
+  color: #444;
 }
 
 .error-container {
@@ -186,8 +197,4 @@ nav a:hover {
 
 .error-container a.home-button:hover {
   background-color: #0899ac;
-}
-
-#searchButton i {
-  color: #444;
 }
