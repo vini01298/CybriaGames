@@ -145,7 +145,7 @@ nav a:hover {
   background-color: #fff;
   border-radius: 8px;
   margin-left: auto;
-  margin-right: 20px; /* Add margin-right to create space */
+  margin-right: 10px; /* Add margin-right to create space */
   padding: 5px;
   width: 300px;
 }
