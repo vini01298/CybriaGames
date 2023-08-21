@@ -46,8 +46,8 @@ nav a {
   text-decoration: none;
   color: #fff;
   font-size: 18px;
-  margin-left: 15px;
-  margin-right: 20px; /* Add margin-right to create space between Nav links and search bar */
+  margin-left: 20px;
+  margin-right: 20px;
   transition: color 0.3s ease;
 }
 
