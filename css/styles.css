@@ -33,7 +33,7 @@ header {
 nav {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 nav a {
@@ -146,6 +146,7 @@ nav a {
 }
 
 #searchButton {
+  margin-left: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
