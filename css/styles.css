@@ -45,6 +45,10 @@ nav a {
   margin-right: 10px; /* Add margin-right to create space between Nav links and search bar */
 }
 
+nav a:hover {
+ color: #0068a4;
+}
+
 /* Game container styles */
 #gamesContainer {
   display: flex;
