@@ -1,20 +1,18 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Drift Hunters | CybriaGames</title>
-    <link rel="shortcut icon" href="/img/favicon/drift-hunters.png">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>  
-    <script src="Build/UnityLoader.js"></script>
+    <link rel="icon" type="image/x-icon" href="/img/favicon/drift-hunters.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Drift Hunters" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/ItchIO.json", {onProgress: UnityProgress});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "./dh.json");
     </script>
   </head>
-  <body>
+  <body style="margin: 0; overflow: hidden;">
     <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div id="gameContainer" style="width: 100vw; height: 100vh; margin: 0;"></div>
     </div>
   </body>
 </html>
