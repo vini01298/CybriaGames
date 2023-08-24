@@ -41,3 +41,5 @@ function generateSquareMaze(dimension) {
     return field;
 
 }
+
+
