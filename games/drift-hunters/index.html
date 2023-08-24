@@ -1,63 +1,35 @@
-<!--
-Drift Hunters
-
-Copyright (c) 2017-present Poki.com
--->
-<!DOCTYPE html>
 <html>
-  	<head>
-		<script type="text/javascript">
-		/**
-		 * Game config
-		 */
+  <head>
+    <title>Drift Hunters | CybriaGames</title>
+   <script async src="https://arc.io/widget.min.js#5XPTU21J"><script data-goatcounter="https://parcoil.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script></script><script src="maintenance.js/"></script><script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+</script>
 
-		window.config = {
-			debug: false,
-			maxRatio: 16 / 9,
-			minRatio: 9 / 16,
-			numScreenshots: 4,
-			unityWebglBuildUrl: 'Build/DriftHuters_Poki.json',
-			unityWebglLoaderUrl: 'Build/UnityLoader.js'
-		};
-		</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W8NZMM8WN9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-	    <meta charset="utf-8">
-	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-	    <title>Drift Hunters | CybriaGames</title>
-
-	    <link rel="stylesheet" type="text/css" href="style.css" />
-      <link rel="icon" type="image/x-icon" href="/img/favicon/drift-hunters.png">
-
-		<script type="text/javascript" src="js/v1.9/poki-sdk.js"></script>
-  	</head>
-  	<body>
-	  	<div id="loader">
-			<div id="slideshow">
-				<div id="slideshow-top">
-					<img alt="Drift Hunters" title="Drift Hunters" src="thumbnail.jpg" id="thumbnail" />
-
-					<div id="slideshow-top-container">
-						<div id="game-title">
-							<h1>Drift Hunters</h1>
-						</div>
-						<div id="progress-container">
-							<div id="progress-bar">
-								<div id="progress-fill" style="width:0%"></div>
-							</div>
-							<div id="progress-amount">0%</div>
-						</div>
-					</div>
-				</div>
-				<div id="slideshow-images"></div>
-				<div id="slideshow-nav"></div>
-			</div>
-		</div>
-
-	  	<div id="game-container">
-			<div id="game"></div>
-		</div>
-
-		<script type="text/javascript" src="scripts/poki-unity-loader.js"></script>
-	</body>
+  gtag('config', 'G-W8NZMM8WN9');
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Drift Hunters" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="UnityLoader.js"></script>
+    <link rel="icon" type="image/x-icon" href="/img/favicon/drift-hunters.png">
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "dh.json");
+    </script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 100vw; height: 100vh; margin: 0;"></div>
+    </div>
+    <!--<script src="/js/main.js"></script>-->
+  </body>
 </html>
