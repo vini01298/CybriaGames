@@ -204,3 +204,34 @@ nav a:hover {
 .error-container a.home-button:hover {
   background-color: #0899ac;
 }
+
+ #iframeContainer {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  #iframeContainer iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  #gameTitle {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  #buttonsContainer {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #buttonsContainer i {
+    margin: 0 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #007bff;
+  }
