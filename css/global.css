@@ -6,13 +6,6 @@ body {
   padding: 0;
 }
 
-main {
-  max-width: 800px; /* Adjust the max-width as needed */
-  margin: 0 auto; /* Center the <main> area horizontally */
-  padding: 20px; /* Add spacing around the content */
-  text-align: center; /* Center-align the content */
-}
-
 /* Header styles */
 header {
   display: flex;
@@ -66,6 +59,7 @@ nav a:hover {
 #gamesContainer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 20px;
   margin-top: 20px;
 }
