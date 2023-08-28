@@ -206,38 +206,37 @@ nav a:hover {
 }
 
   #iframeContainer {
-    position: relative;
-    margin-top: 50px;
     text-align: center;
+    margin-top: 50px;
+    position: relative; /* Add position relative */
   }
 
   #iframeContainer iframe {
-    width: 100%;
-    max-width: 1200px; /* Increase the maximum width */
-    height: 800px; /* Increase the height */
-    border: 2px solid white; /* Add a white border */
-    border-radius: 20px; /* Add rounded corners */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Update the box shadow */
+    width: 90%; /* Adjust width as needed */
+    max-width: 1200px;
+    height: 60vh; /* Adjust height as needed */
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
 
   #gameTitle {
     position: absolute;
-    bottom: -50px; /* Adjust the distance from the iframe */
-    left: 0;
-    font-size: 28px; /* Increase font size */
-    font-weight: bold; /* Add bold style */
-    margin: 0; /* Reset margin */
+    bottom: -40px;
+    left: 10px; /* Adjust distance from the left edge */
+    font-size: 28px;
+    font-weight: bold;
   }
 
   #buttonsContainer {
     position: absolute;
-    bottom: -50px; /* Adjust the distance from the iframe */
-    right: 0;
+    bottom: -40px;
+    right: 10px; /* Adjust distance from the right edge */
   }
 
   #buttonsContainer i {
-    margin: 0 15px; /* Increase the margin */
-    font-size: 28px; /* Increase icon size */
+    margin: 0 15px;
+    font-size: 28px;
     cursor: pointer;
     color: #007bff;
   }
