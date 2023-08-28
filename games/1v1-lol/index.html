@@ -45,27 +45,51 @@
   </div>
 </main>
 <script>
+  let originalIframeWidth;
+  let originalIframeHeight;
+
   document.getElementById('fullscreenButton').addEventListener('click', () => {
     const iframeContainer = document.getElementById('iframeContainer');
     const iframe = iframeContainer.querySelector('iframe');
 
-    if (iframe.requestFullscreen) {
-      iframe.requestFullscreen();
-    } else if (iframe.mozRequestFullScreen) { /* Firefox */
-      iframe.mozRequestFullScreen();
-    } else if (iframe.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-      iframe.webkitRequestFullscreen();
-    } else if (iframe.msRequestFullscreen) { /* IE/Edge */
-      iframe.msRequestFullscreen();
+    if (!document.fullscreenElement) {
+      originalIframeWidth = iframe.style.width;
+      originalIframeHeight = iframe.style.height;
+
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+      } else if (iframe.mozRequestFullScreen) { /* Firefox */
+        iframe.mozRequestFullScreen();
+      } else if (iframe.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+        iframe.webkitRequestFullscreen();
+      } else if (iframe.msRequestFullscreen) { /* IE/Edge */
+        iframe.msRequestFullscreen();
+      }
+
+      // Adjust iframe size after entering fullscreen mode
+      iframe.style.width = '100vw';
+      iframe.style.height = '100vh';
+
+      // Hide other elements on the page
+      document.getElementById('gameTitle').style.display = 'none';
+      document.getElementById('buttonsContainer').style.display = 'none';
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.mozCancelFullScreen) { /* Firefox */
+        document.mozCancelFullScreen();
+      } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) { /* IE/Edge */
+        document.msExitFullscreen();
+      }
+
+      // Restore original iframe size and show other elements
+      iframe.style.width = originalIframeWidth;
+      iframe.style.height = originalIframeHeight;
+      document.getElementById('gameTitle').style.display = 'block';
+      document.getElementById('buttonsContainer').style.display = 'block';
     }
-
-    // Adjust iframe size after entering fullscreen mode
-    iframe.style.width = '100%';
-    iframe.style.height = '100%';
-
-    // Hide other elements on the page
-    document.getElementById('gameTitle').style.display = 'none';
-    document.getElementById('buttonsContainer').style.display = 'none';
   });
 
   document.getElementById('embedButton').addEventListener('click', () => {
