@@ -142,7 +142,7 @@ nav a:hover {
 #searchContainer {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Align items to the ends, creating space for the search button */
+  justify-content: space-between;
   background-color: #fff;
   border-radius: 8px;
   margin-left: auto;
@@ -166,9 +166,19 @@ nav a:hover {
   padding: 0;
 }
 
-
 #searchButton i {
   color: #444;
+}
+
+.icon-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.icon-button:focus {
+  outline: none;
 }
 
 /* Error container styles */
