@@ -208,7 +208,7 @@ nav a:hover {
 .button-container {
   display: inline-block;
   border: 1px solid #ccc;
-  background-color: #f0f0f0;
+  background-color: transparent;
   padding: 10px 20px;
   border-radius: 4px;
   text-align: center;
