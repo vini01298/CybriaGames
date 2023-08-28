@@ -210,16 +210,16 @@ nav a:hover {
   border: 1px solid #ccc;
   background-color: transparent;
   padding: 10px 20px;
-  border-radius: 4px;
   text-align: center;
 }
 
 .button-container a {
   text-decoration: none;
-  color: #333;
+  color: white;
 }
 
 .button-container i {
+  color: white;
   margin-right: 10px;
 }
 
