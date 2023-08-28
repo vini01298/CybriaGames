@@ -205,38 +205,21 @@ nav a:hover {
   background-color: #0899ac;
 }
 
-#iframeContainer {
+.button-container {
+  display: inline-block;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  border-radius: 4px;
   text-align: center;
-  margin-top: 50px;
-  position: relative;
 }
 
-#iframeContainer iframe {
-  width: 90%;
-  max-width: 1200px;
-  height: 70vh; /* Adjust height as needed */
-  border: 2px solid white;
-  border-radius: 20px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+.button-container a {
+  text-decoration: none;
+  color: #333;
 }
 
-#gameTitle {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  font-size: 28px;
-  font-weight: bold;
+.button-container i {
+  margin-right: 10px;
 }
 
-#buttonsContainer {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-}
-
-#buttonsContainer i {
-  margin: 0 15px;
-  font-size: 28px;
-  cursor: pointer;
-  color: #007bff;
-}
