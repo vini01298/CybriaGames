@@ -223,3 +223,18 @@ nav a:hover {
   margin-right: 10px;
 }
 
+.icon-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.icon-button i {
+  margin-right: 10px;
+}
+
+.icon-button:focus {
+  outline: none;
+}
+
