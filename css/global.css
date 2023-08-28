@@ -163,7 +163,8 @@ nav a:hover {
   border: none;
   cursor: pointer;
   padding: 0;
-  margin-left: 1px; /* Adjust the margin as needed */
+  margin-left: 0; /* Remove the margin-left */
+  margin-right: 1px; /* Adjust the margin as needed */
 }
 
 #searchButton i {
