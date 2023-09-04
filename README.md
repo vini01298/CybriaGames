@@ -4,7 +4,7 @@ CybriaGames Is An Unblocked Games Website For fun. I Mean, Everyone Needs Fun Ri
 
 # Deploy
 
-
+[![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/CybriaTech/CybriaGames)
 [![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://replit.com/github/CybriaTech/CybriaGames)
 [![Deploy with Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repositoryurl=https://github.com/CybriaTech/CybriaGames)
 
