@@ -2,6 +2,8 @@
 
 CybriaGames Is An Unblocked Games Website For fun. I Mean, Everyone Needs Fun Right?
 
+## Note: This is a static website, so no proxies here. CybriaGames 2 will be node. Can support proxies!
+
 # Deploy
 
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/CybriaTech/CybriaGames)
