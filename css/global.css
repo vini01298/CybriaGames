@@ -275,7 +275,7 @@ nav a:hover {
 
 .icon-button:focus {
   outline: none;
-}
+  
 /* CSS for input elements */
 .input-container {
   margin-bottom: 15px;
@@ -292,6 +292,8 @@ nav a:hover {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  /* Reduce the height of text input boxes */
+  height: 30px;
 }
 
 /* CSS for the switch */
@@ -396,6 +398,19 @@ input:checked + .slider:before {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.dropdown:hover .dropbtn {
+  background-color: #45a049;
+}
+
+/* CSS to center the main area */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 
 .dropdown:hover .dropbtn {
   background-color: #45a049;
