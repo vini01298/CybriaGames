@@ -13,7 +13,7 @@ CybriaGames Is An Unblocked Games Website For fun. I Mean, Everyone Needs Fun Ri
 
 # Current Domains/SubDomains
 
-[![Netlify](https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg)](https://cybriagames.netlify.app)
+<a href="https://cybriagames.netlify.app">Netlify</a>
 
 # Sources
 
