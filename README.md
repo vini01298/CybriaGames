@@ -11,6 +11,10 @@ CybriaGames Is An Unblocked Games Website For fun. I Mean, Everyone Needs Fun Ri
 [![Deploy with Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repositoryurl=https://github.com/CybriaTech/CybriaGames)
 [![Deploy with Netlify](https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/CybriaTech/CybriaGames)
 
+# Current Domains/SubDomains
+
+[![Netlify](https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg)](https://cybriagames.netlify.app)
+
 # Sources
 
 The Games Are Not Mine, They Are Copied and Pasted Into Here. These Are The People That I Got The Games From:
