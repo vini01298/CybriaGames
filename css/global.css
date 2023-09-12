@@ -416,4 +416,26 @@ main {
   background-color: #45a049;
 }
 
+  #bug-report-form {
+    margin-top: 20px;
+    text-align: center;
+  }
+  #bug-report-form input[type="text"],
+  #bug-report-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  #bug-report-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  #bug-report-form input[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
 
