@@ -44,8 +44,14 @@
     </nav>
   </header>
   <main>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfqg12Q-YZNl481npczoyspuZRqd_mqiCbJrrSzs8RI4rSb4w/viewform?embedded=true" width="720" height="520" frameborder="0" marginheight="0" marginwidth="0" style=“justify-content: center;”>Loading…</iframe>
+    <form id="bug-report-form" action="submit_bug.php" method="post" onsubmit="redirectToSuccessPage()">
+      <h2>CybriaGames Support</h2>
+      <label for="issue">What Is Your Issue?</label><br>
+      <textarea id="issue" name="issue" rows="4" required></textarea><br>
+      <input type="submit" value="Submit" id="submit-button" disabled>
+    </form>
   </main>
+</body>
 <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
     new Crate({
         server: '1131991696163479674', // CybriaTech
@@ -54,5 +60,8 @@
 </script>
     <script src="/js/tam.js">
     </script>
-</body>
+<script>
+  function redirectToSuccessPage() {
+    window.location.href = 'success.html';
+  }</script>
 </html>
