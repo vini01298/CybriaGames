@@ -44,9 +44,11 @@
 }
 
 .popup-body h2 {
+    color: black;
     font-size: 24px;
 }
 
 .popup-body p {
     font-size: 16px;
+    color: black;
 }
