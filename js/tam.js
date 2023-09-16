@@ -32,15 +32,21 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.appendChild(birthdayPopup);
 
     const today = new Date();
-    if (today.getMonth() === 8 && today.getDate() === 16) { // September is month 8 in JavaScript (0-based index)
-        birthdayPopup.style.display = "block";
+    const currentYear = today.getFullYear();
+    const lastPopupDate = localStorage.getItem('lastPopupDate');
 
-        closeButton.addEventListener("click", () => {
-            birthdayPopup.style.transform = "scale(0.5)";
-            birthdayPopup.style.opacity = "0";
-            setTimeout(() => {
-                birthdayPopup.style.display = "none";
-            }, 400);
-        });
+    if (today.getMonth() === 8 && today.getDate() === 16) { // September is month 8 in JavaScript (0-based index)
+        if (!lastPopupDate || lastPopupDate !== currentYear.toString()) {
+            birthdayPopup.style.display = "block";
+            localStorage.setItem('lastPopupDate', currentYear.toString());
+
+            closeButton.addEventListener("click", () => {
+                birthdayPopup.style.transform = "scale(0.5)";
+                birthdayPopup.style.opacity = "0";
+                setTimeout(() => {
+                    birthdayPopup.style.display = "none";
+                }, 400);
+            });
+        }
     }
 });
