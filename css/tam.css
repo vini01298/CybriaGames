@@ -38,9 +38,7 @@
 }
 
 .close-button:hover {
-    background-color: red;
-    border-radius: 25%;
-    color: #fff;
+    color: red;
 }
 
 .popup-body h2 {
