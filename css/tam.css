@@ -39,7 +39,7 @@
 
 .close-button:hover {
     background-color: red;
-    border-radius: 50%;
+    border-radius: 25%;
     color: #fff;
 }
 
