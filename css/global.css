@@ -222,6 +222,36 @@ nav a:hover {
   background-color: #0899ac;
 }
 
+.error-container a.widgetbot-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0ec2e1;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.error-container a.widgetbot-button:hover {
+  background-color: #0899ac;
+}
+
+.error-container a.discord-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0ec2e1;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.error-container a.discord-button:hover {
+  background-color: #0899ac;
+}
+
 .button-container {
   display: inline-block;
   border: 1px solid #ccc;
