@@ -15,7 +15,7 @@ CybriaGames Is An Unblocked Games Website For fun. I Mean, Everyone Needs Fun Ri
 
 <a href="https://cybriagames.netlify.app">Netlify</a>
 
-<a href="https://www.cybriagames.com/">Official Domain</a>
+<a href="https://cybriagames.com/">Official Domain</a>
 
 # Sources
 
