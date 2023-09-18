@@ -226,7 +226,7 @@ nav a:hover {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #0ec2e1;
+  background-color: #e90000;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -234,14 +234,14 @@ nav a:hover {
 }
 
 .error-container a.widgetbot-button:hover {
-  background-color: #0899ac;
+  background-color: #b80000;
 }
 
 .error-container a.discord-button {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #0ec2e1;
+  background-color: #e90000;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -249,7 +249,7 @@ nav a:hover {
 }
 
 .error-container a.discord-button:hover {
-  background-color: #0899ac;
+  background-color: #b80000;
 }
 
 .button-container {
