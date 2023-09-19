@@ -100,6 +100,52 @@
       }
     }
   </script>
+<!-- Schoology Cloak JS -->
+<script>
+function schoologyCloak() {
+  // Check if LocalStorage has a value for cloaking
+  const isCloaked = localStorage.getItem('schoologyCloaked');
+
+  // Check if the current page is Schoology
+  if (window.location.hostname.includes('schoology.com')) {
+    // Change the favicon and title only if it's not already cloaked
+    if (!isCloaked) {
+      // Save the original favicon and title in LocalStorage
+      localStorage.setItem('originalFavicon', document.querySelector('link[rel="icon"]').href);
+      localStorage.setItem('originalTitle', document.title);
+
+      // Set the new favicon and title
+      document.querySelector('link[rel="icon"]').href = '/cloak/schoology.ico';
+      document.title = 'Home | Schoology';
+
+      // Mark the site as cloaked in LocalStorage
+      localStorage.setItem('schoologyCloaked', 'true');
+    }
+  } else {
+    // Check if the site was previously cloaked
+    if (isCloaked) {
+      // Restore the original favicon and title
+      const originalFavicon = localStorage.getItem('originalFavicon');
+      const originalTitle = localStorage.getItem('originalTitle');
+
+      if (originalFavicon) {
+        document.querySelector('link[rel="icon"]').href = originalFavicon;
+      }
+      if (originalTitle) {
+        document.title = originalTitle;
+      }
+
+      // Remove the cloaked status from LocalStorage
+      localStorage.removeItem('schoologyCloaked');
+      localStorage.removeItem('originalFavicon');
+      localStorage.removeItem('originalTitle');
+    }
+  }
+}
+
+// Call the schoologyCloak() function to apply the changes on page load
+schoologyCloak();
+</script>
     <script src="/js/tam.js">
     </script>
 </body>
