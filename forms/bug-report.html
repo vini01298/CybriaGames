@@ -63,11 +63,11 @@
       <h2>Report Bugs To CybriaGames</h2>
       <p>If You Found Errors, Report Here! We Will Try To Fix It.</p>
       <div style="text-align: center;">
-        <input type="text" id="bugName" style="font-size: 24px; width: 300px; border-radius: 5px;" placeholder="Report Bugs" />
+        <input type="text" id="gameName" style="font-size: 24px; width: 300px; border-radius: 5px;" placeholder="Report Bugs Here." />
       </div>
       <p style="text-align: center; color: red;">Please Know That We Might Not Be Able To Fix EVERY Bug.</p>
       <div style="text-align: center;">
-        <button id="add-game-button" style="font-size: 24px; margin-top: 10px;" onclick="submitBug()"><i class="fas fa-check"></i> Submit</button>
+        <button id="add-game-button" style="font-size: 24px; margin-top: 10px;" onclick="submitGame()"><i class="fas fa-check"></i> Submit</button>
       </div>
     </div>
   </main>
@@ -80,12 +80,13 @@
   <script src="/js/tam.js">
   </script>
   <script>
-    function submitBug() {
-      var bugName = document.getElementById("bugName").value;
-      if (bugName.length > 0) {
+    function submitGame() {
+      var gameName = document.getElementById("gameName").value;
+      if (gameName.length > 0) {
         var webhookURL = 'https://discord.com/api/webhooks/1153658312001331231/TGyquQJSy44uuNajyVZ_FwbROO2OCTQwtEOUBFJW5VqLdv0WwXN3kRsh0vFqSmVDy-AO';
         var data = {
-          content: 'Reported Bug: ' + bugName
+          content: 'Reported Bug: ' + gameName
+        };
 
         fetch(webhookURL, {
           method: 'POST',
@@ -96,9 +97,9 @@
         })
         .then(response => {
           if (response.status === 204) {
-            alert('Bug submitted successfully: ' + bugName);
+            alert('Bug Report Sent: ' + gameName);
           } else {
-            alert('Failed to submit Bug: ' + bugName);
+            alert('Failed to send report: ' + gameName);
           }
         })
         .catch(error => {
