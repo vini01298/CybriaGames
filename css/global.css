@@ -222,7 +222,7 @@ nav a:hover {
   background-color: #0899ac;
 }
 
-.cloak-button {
+.error-container a.cloak-button {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
@@ -233,7 +233,7 @@ nav a:hover {
   transition: background-color 0.3s ease;
 }
 
-.cloak-button:hover {
+.error-container a.cloak-button:hover {
   background-color: #008500;
 }
 
