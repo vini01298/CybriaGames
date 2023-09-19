@@ -68,7 +68,7 @@
     function submitGame() {
       var gameName = document.getElementById("gameName").value;
       if (gameName.length > 0) {
-        var webhookURL = 'https://discord.com/api/webhooks/1153430651685568573/bE2sZ6WAnhhHl13DxTFhLjxG8DHhGdcCsGl6W9nS-F4DMIWCg6MHJgLzc2SkoOcrvK4c/github';
+        var webhookURL = 'https://discord.com/api/webhooks/1153430651685568573/bE2sZ6WAnhhHl13DxTFhLjxG8DHhGdcCsGl6W9nS-F4DMIWCg6MHJgLzc2SkoOcrvK4c';
         var data = {
           content: 'New Game Submission: ' + gameName
         };
@@ -92,7 +92,7 @@
         });
       } else {
         // If no text is entered, disable the button
-        document.getElementById("submitButton").disabled = true;
+        document.getElementById("add-game-button").disabled = true;
       }
     }
   </script>
