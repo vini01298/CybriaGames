@@ -52,6 +52,14 @@
 <a class="cloak-button" href="javascript:void(0);" onclick="googleCloak();"><i class="fas fa-eye-slash"></i> Google</a>
 <a class="cloak-button" href="javascript:void(0);" onclick="abCloak();"><i class="fas fa-eye-slash"></i> about:blank</a>
 <a class="cloak-button" href="javascript:void(0);" onclick="cnewtabCloak();"><i class="fas fa-eye-slash"></i> Chrome New Tab</a>
+      <br>
+      <p>If you dont see a cloak that isnt there, suggest one here!</p>
+            <div style="text-align: center;">
+        <input type="text" id="gameName" style="font-size: 24px; width: 300px; border-radius: 5px;" placeholder="Add A Tab Cloak Here." />
+      </div>
+      <div style="text-align: center;">
+        <button id="add-game-button" style="font-size: 24px; margin-top: 10px;" onclick="submitGame()"><i class="fas fa-check"></i> Submit</button>
+      </div>
     </div>
   </main>
 <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
@@ -60,6 +68,38 @@
         channel: '1131991698663280714' // #general
     })
 </script>
+    <script>
+    function submitGame() {
+      var gameName = document.getElementById("gameName").value;
+      if (gameName.length > 0) {
+        var webhookURL = 'https://discord.com/api/webhooks/1153802950213369946/20u-fTDu2wS3brXXrW4i69WuTpvurucZSYdw-BkxHtXDIgjRJP46MTDQHgc5ArHsWROE';
+        var data = {
+          content: 'New Tab Cloak Suggestion: ' + gameName
+        };
+
+        fetch(webhookURL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        })
+        .then(response => {
+          if (response.status === 204) {
+            alert('Tab Cloak submitted successfully: ' + gameName);
+          } else {
+            alert('Failed to submit tab cloak: ' + gameName);
+          }
+        })
+        .catch(error => {
+          alert('Error: ' + error);
+        });
+      } else {
+        // If no text is entered, disable the button
+        document.getElementById("add-game-button").disabled = true;
+      }
+    }
+  </script>
     <script src="/js/tam.js">
     </script>
 </body>
