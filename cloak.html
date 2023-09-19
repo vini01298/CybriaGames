@@ -67,6 +67,67 @@
         channel: '1131991698663280714' // #general
     })
 </script>
+  <script>
+    <script>
+        // Function to update the favicon
+        function updateFavicon(url) {
+            const favicon = document.querySelector("#dynamic-favicon");
+            favicon.href = url;
+        }
+
+        // Function to update the website title
+        function updateWebsiteTitle(title) {
+            document.title = title;
+        }
+
+        // Function to save changes to LocalStorage
+        function saveChangesToLocalStorage(faviconURL, websiteTitle) {
+            localStorage.setItem("customFaviconURL", faviconURL);
+            localStorage.setItem("customWebsiteTitle", websiteTitle);
+        }
+
+        // Function to load saved changes from LocalStorage
+        function loadChangesFromLocalStorage() {
+            const savedFaviconURL = localStorage.getItem("customFaviconURL");
+            const savedWebsiteTitle = localStorage.getItem("customWebsiteTitle");
+
+            if (savedFaviconURL) {
+                updateFavicon(savedFaviconURL);
+                document.querySelector("#faviconURL").value = savedFaviconURL;
+            }
+
+            if (savedWebsiteTitle) {
+                updateWebsiteTitle(savedWebsiteTitle);
+                document.querySelector("#websiteTitle").value = savedWebsiteTitle;
+            }
+        }
+
+        // Function to submit the form and update favicon and title
+        function submitGame() {
+            const faviconURL = document.querySelector("#faviconURL").value;
+            const websiteTitle = document.querySelector("#websiteTitle").value;
+
+            updateFavicon(faviconURL);
+            updateWebsiteTitle(websiteTitle);
+            saveChangesToLocalStorage(faviconURL, websiteTitle);
+        }
+
+        // Function to remove the cloak (reset to default)
+        function removeCloak() {
+            updateFavicon("default-favicon.ico");
+            updateWebsiteTitle("Cloak Tabs");
+            localStorage.removeItem("customFaviconURL");
+            localStorage.removeItem("customWebsiteTitle");
+            document.querySelector("#faviconURL").value = "";
+            document.querySelector("#websiteTitle").value = "";
+        }
+
+        // Load saved changes when the page loads
+        window.onload = function () {
+            loadChangesFromLocalStorage();
+        };
+  </script>
+    </script>
     <script src="/js/tam.js">
     </script>
 </body>
