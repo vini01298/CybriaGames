@@ -45,21 +45,20 @@
   </header>
   <main>
     <div class="error-container">
-      <h2>Cloak Tabs</h2>
-      <p>If you wanna be sneaky and play games during school, use these.</p>
-<a class="cloak-button" href="javascript:void(0);" onclick="schoologyCloak();"><i class="fas fa-eye-slash"></i> Home | Schoology</a>
-<a class="cloak-button" href="javascript:void(0);" onclick="hacCloak();"><i class="fas fa-eye-slash"></i> Home View Summary</a>
-<a class="cloak-button" href="javascript:void(0);" onclick="googleCloak();"><i class="fas fa-eye-slash"></i> Google</a>
-<a class="cloak-button" href="javascript:void(0);" onclick="abCloak();"><i class="fas fa-eye-slash"></i> about:blank</a>
-<a class="cloak-button" href="javascript:void(0);" onclick="cnewtabCloak();"><i class="fas fa-eye-slash"></i> Chrome New Tab</a>
-      <br>
-      <p>If you dont see a cloak that isnt there, suggest one here!</p>
-            <div style="text-align: center;">
-        <input type="text" id="gameName" style="font-size: 24px; width: 300px; border-radius: 5px;" placeholder="Add A Tab Cloak Here." />
-      </div>
-      <div style="text-align: center;">
-        <button id="add-game-button" style="font-size: 24px; margin-top: 10px;" onclick="submitGame()"><i class="fas fa-check"></i> Submit</button>
-      </div>
+        <h2>Cloak Tabs</h2>
+        <p>If you wanna be sneaky and play games during school, use these.</p>
+        <div style="text-align: center;">
+            <input type="text" id="faviconURL" style="font-size: 24px; width: 300px; border-radius: 5px;" placeholder="Favicon URL" />
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <input type="text" id="websiteTitle" style="font-size: 24px; width: 300px; border-radius: 5px;" placeholder="Website Title" />
+        </div>
+        <div style="text-align: center;">
+            <button id="add-game-button" style="font-size: 24px; margin-top: 10px;" onclick="submitGame()"><i class="fas fa-check"></i> Enter</button>
+            <button id="cloak-button" style="font-size: 24px; margin-top: 10px;" onclick="removeCloak()"><i class="fas fa-times"></i> Remove Cloak</button>
+          <p>Tip: Its easier to get favicons using this method, if ur on chome, use this "chrome://favicon/YOUR-URL-HERE", for Edge, use this "edge://favicon/YOUR-URL-HERE"</p>
+        </div>
     </div>
   </main>
 <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
@@ -67,84 +66,6 @@
         server: '1131991696163479674', // CybriaTech
         channel: '1131991698663280714' // #general
     })
-</script>
-    <script>
-    function submitGame() {
-      var gameName = document.getElementById("gameName").value;
-      if (gameName.length > 0) {
-        var webhookURL = 'https://discord.com/api/webhooks/1153802950213369946/20u-fTDu2wS3brXXrW4i69WuTpvurucZSYdw-BkxHtXDIgjRJP46MTDQHgc5ArHsWROE';
-        var data = {
-          content: 'New Tab Cloak Suggestion: ' + gameName
-        };
-
-        fetch(webhookURL, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data),
-        })
-        .then(response => {
-          if (response.status === 204) {
-            alert('Tab Cloak submitted successfully: ' + gameName);
-          } else {
-            alert('Failed to submit tab cloak: ' + gameName);
-          }
-        })
-        .catch(error => {
-          alert('Error: ' + error);
-        });
-      } else {
-        // If no text is entered, disable the button
-        document.getElementById("add-game-button").disabled = true;
-      }
-    }
-  </script>
-<!-- Schoology Cloak JS -->
-<script>
-function schoologyCloak() {
-  // Check if LocalStorage has a value for cloaking
-  const isCloaked = localStorage.getItem('schoologyCloaked');
-
-  // Check if the current page is Schoology
-  if (window.location.hostname.includes('schoology.com')) {
-    // Change the favicon and title only if it's not already cloaked
-    if (!isCloaked) {
-      // Save the original favicon and title in LocalStorage
-      localStorage.setItem('originalFavicon', document.querySelector('link[rel="icon"]').href);
-      localStorage.setItem('originalTitle', document.title);
-
-      // Set the new favicon and title
-      document.querySelector('link[rel="icon"]').href = '/cloak/schoology.ico';
-      document.title = 'Home | Schoology';
-
-      // Mark the site as cloaked in LocalStorage
-      localStorage.setItem('schoologyCloaked', 'true');
-    }
-  } else {
-    // Check if the site was previously cloaked
-    if (isCloaked) {
-      // Restore the original favicon and title
-      const originalFavicon = localStorage.getItem('originalFavicon');
-      const originalTitle = localStorage.getItem('originalTitle');
-
-      if (originalFavicon) {
-        document.querySelector('link[rel="icon"]').href = originalFavicon;
-      }
-      if (originalTitle) {
-        document.title = originalTitle;
-      }
-
-      // Remove the cloaked status from LocalStorage
-      localStorage.removeItem('schoologyCloaked');
-      localStorage.removeItem('originalFavicon');
-      localStorage.removeItem('originalTitle');
-    }
-  }
-}
-
-// Call the schoologyCloak() function to apply the changes on page load
-schoologyCloak();
 </script>
     <script src="/js/tam.js">
     </script>
