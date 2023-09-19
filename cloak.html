@@ -55,9 +55,9 @@
             <input type="text" id="websiteTitle" style="font-size: 24px; width: 300px; border-radius: 5px;" placeholder="Website Title" />
         </div>
         <div style="text-align: center;">
-<button id="add-game-button" style="font-size: 24px; margin-top: 10px;" onclick="cloak()"><i class="fas fa-check"></i> Enter</button>
+            <button id="add-game-button" style="font-size: 24px; margin-top: 10px;" onclick="cloak()"><i class="fas fa-check"></i> Enter</button>
             <button id="cloak-button" style="font-size: 24px; margin-top: 10px;" onclick="removeCloak()"><i class="fas fa-times"></i> Remove Cloak</button>
-          <p>Tip: Its easier to get favicons using this method, if ur on chome, use this "chrome://favicon/YOUR-URL-HERE", for Edge, use this "edge://favicon/YOUR-URL-HERE"</p>
+            <p>Tip: It's easier to get favicons using this method. If you're on Chrome, use this "chrome://favicon/YOUR-URL-HERE"; for Edge, use this "edge://favicon/YOUR-URL-HERE".</p>
         </div>
     </div>
   </main>
@@ -68,7 +68,6 @@
     })
 </script>
   <script>
-    <script>
         // Function to update the favicon
         function updateFavicon(url) {
             const favicon = document.querySelector("#dynamic-favicon");
@@ -103,7 +102,7 @@
         }
 
         // Function to submit the form and update favicon and title
-        function submitGame() {
+        function cloak() {
             const faviconURL = document.querySelector("#faviconURL").value;
             const websiteTitle = document.querySelector("#websiteTitle").value;
 
@@ -127,7 +126,6 @@
             loadChangesFromLocalStorage();
         };
   </script>
-    </script>
     <script src="/js/tam.js">
     </script>
 </body>
