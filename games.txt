@@ -45,7 +45,7 @@ World's Hardest Game
 CSGO Clicker
 Paper.io 2
 100 Player Pong
-Age Of Conflict
+Age Of Confl2ict
 Basket Bros
 Doge Miner
 Minecraft Classic
@@ -59,3 +59,4 @@ Twitch Tetris
 OvO 2
 World's Hrdest Game 3
 World's Hardest Game 2
+Eggy Car
