@@ -2,8 +2,6 @@
 <html>
 <head>
   <title>Add Games | CybriaGames</title>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4874616183592939"
-     crossorigin="anonymous"></script>
   <meta charset="utf-8"/>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTQ60TS6SP"></script>
@@ -69,7 +67,7 @@
       </div>
       <p style="text-align: center; color: red;"><i class="fas fa-triangle-exclamation" style="color: red;"></i> Please Know That We Can Only Add Games That Are Already Emulated <i class="fas fa-triangle-exclamation" style="color: red;"></i></p>
       <div style="text-align: center;">
-        <button id="add-game-button" style="font-size: 24px; margin-top: 10px;" onclick="submitGame()"><i class="fas fa-check"></i> Submit</button>
+        <button class="add-game-button" id="add-game-button" style="font-size: 24px; margin-top: 10px;" onclick="submitGame()">Submit</button>
       </div>
     </div>
   </main>
@@ -82,36 +80,35 @@
   <script src="/js/tam.js">
   </script>
   <script>
-    function submitGame() {
-      var gameName = document.getElementById("gameName").value;
-      if (gameName.length > 0) {
-        var webhookURL = 'https://discord.com/api/webhooks/1154800718490914951/eveN8z4eg9ek4uh-n8gpKQb_oT_NUD4UN11kTETZo_NzQaG-smPF2SeLy6Io2nOWnS4n';
-        var data = {
-          content: 'New Game Submission: ' + gameName
-        };
+  function submitGame() {
+    var gameName = document.getElementById("gameName").value;
+    if (gameName.length > 0) {
+      // Construct the URL for the suggested-games.txt file
+      var url = '/txt/suggested-games.txt';
 
-        fetch(webhookURL, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data),
-        })
+      // Use the fetch API to submit the gameName to the file
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'text/plain',
+        },
+        body: 'Suggested Game: ' + gameName,
+      })
         .then(response => {
-          if (response.status === 204) {
-            alert('Game submitted successfully: ' + gameName);
+          if (response.status === 200) {
+            alert('Your Suggestion Has Been successfuly Sent!');
           } else {
-            alert('Failed to submit game: ' + gameName);
+            alert('ERROR! YOUR SUGGESTION COULDNT BE SENT!');
           }
         })
         .catch(error => {
           alert('Error: ' + error);
         });
-      } else {
-        // If no text is entered, disable the button
-        document.getElementById("add-game-button").disabled = true;
-      }
+    } else {
+      // If no text is entered, disable the button
+      document.getElementById("add-game-button").disabled = true;
     }
+  }
   </script>
 </body>
 </html>
