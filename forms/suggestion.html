@@ -82,36 +82,35 @@
   <script src="/js/tam.js">
   </script>
   <script>
-    function submitGame() {
-      var gameName = document.getElementById("gameName").value;
-      if (gameName.length > 0) {
-        var webhookURL = 'https://discord.com/api/webhooks/1154801431753277531/wgjniB_tlhrkuStj_l3MMgIaiRcKjIPy6cg3r8ToSd5bFd_k1GPwN11QbrdQEuMABxpG';
-        var data = {
-          content: 'New Suggestion: ' + gameName
-        };
+  function submitGame() {
+    var gameName = document.getElementById("gameName").value;
+    if (gameName.length > 0) {
+      // Construct the URL for the suggested-games.txt file
+      var url = '/txt/suggestions.txt';
 
-        fetch(webhookURL, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data),
-        })
+      // Use the fetch API to submit the gameName to the file
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'text/plain',
+        },
+        body: 'New Suggestion: ' + gameName,
+      })
         .then(response => {
-          if (response.status === 204) {
-            alert('Submitted Suggestion successfully: ' + gameName);
+          if (response.status === 200) {
+            alert('Your Suggestion Has Been successfuly Sent!');
           } else {
-            alert('Failed to send Suggestion: ' + gameName);
+            alert('ERROR! YOUR SUGGESTION COULDNT BE SENT!');
           }
         })
         .catch(error => {
           alert('Error: ' + error);
         });
-      } else {
-        // If no text is entered, disable the button
-        document.getElementById("add-game-button").disabled = true;
-      }
+    } else {
+      // If no text is entered, disable the button
+      document.getElementById("add-game-button").disabled = true;
     }
+  }
   </script>
 </body>
 </html>
