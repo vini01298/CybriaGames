@@ -82,36 +82,35 @@
   <script src="/js/tam.js">
   </script>
   <script>
-    function submitGame() {
-      var gameName = document.getElementById("gameName").value;
-      if (gameName.length > 0) {
-        var webhookURL = 'https://discord.com/api/webhooks/1154801658258280448/s1FUZwvIkO3nYfl0vA7Be9vLyTVKzBvf3zf4WKdArqw54ZsJoKQlDX6Pi3UqhhrzwkOF';
-        var data = {
-          content: 'Reported Bug: ' + gameName
-        };
+  function submitGame() {
+    var gameName = document.getElementById("gameName").value;
+    if (gameName.length > 0) {
+      // Construct the URL for the suggested-games.txt file
+      var url = '/txt/reported-bugs.txt';
 
-        fetch(webhookURL, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data),
-        })
+      // Use the fetch API to submit the gameName to the file
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'text/plain',
+        },
+        body: 'Reported Bug: ' + gameName,
+      })
         .then(response => {
-          if (response.status === 204) {
-            alert('Bug Report Sent: ' + gameName);
+          if (response.status === 200) {
+            alert('Your Report Has Been successfuly Sent!');
           } else {
-            alert('Failed to send report: ' + gameName);
+            alert('ERROR! YOUR REPORT COULDNT BE SENT!');
           }
         })
         .catch(error => {
           alert('Error: ' + error);
         });
-      } else {
-        // If no text is entered, disable the button
-        document.getElementById("add-game-button").disabled = true;
-      }
+    } else {
+      // If no text is entered, disable the button
+      document.getElementById("add-game-button").disabled = true;
     }
+  }
   </script>
 </body>
 </html>
