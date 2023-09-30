@@ -3,20 +3,6 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bloxorz | CybriaGames</title>
-        <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTQ60TS6SP"></script>
 <script>
@@ -29,6 +15,22 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon/bloxorz.jpg">
   </head>
   <body style="margin: 0; padding: 0">
-    <iframe src="bloxorz.swf" frameborder="0" allowfullscreen></iframe>
+    <div
+      id="container"
+      style="position: absolute; width: auto; height: auto; inset: 0"
+    ></div>
+    <script src="../ruffle/ruffle.js"></script>
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("container");
+        player.style.width = "100%";
+        player.style.height = "100%";
+        container.appendChild(player);
+        player.load("bloxorz.swf");
+      });
+    </script>
   </body>
 </html>
