@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
     popupBody.classList.add("popup-body");
 
     const title = document.createElement("h2");
-    title.innerText = "🎂Happy Birthday Tam🎉";
+    title.innerText = "🎂Happy Birthday CybriaGames🎉";
 
     const message = document.createElement("p");
-    message.innerText = "Today is September 16th, aka Tam's birthday! He made these sites for you, so tell him HAPPY BIRTHDAY!!";
+    message.innerText = "Today is July 15, CybriaGame's Official Birthday!!";
 
     popupHeader.appendChild(closeButton);
     popupBody.appendChild(title);
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentYear = today.getFullYear();
     const lastPopupDate = localStorage.getItem('lastPopupDate');
 
-    if (today.getMonth() === 8 && today.getDate() === 16) { // September is month 8 in JavaScript (0-based index)
+    if (today.getMonth() === 6 && today.getDate() === 15) { 
         if (!lastPopupDate || lastPopupDate !== currentYear.toString()) {
             birthdayPopup.style.display = "block";
             localStorage.setItem('lastPopupDate', currentYear.toString());
