@@ -20,6 +20,33 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
 <link href="/css/global.css" rel="stylesheet" type="text/css"/>
 <link href="/css/cybriagames.css" rel="stylesheet" type="text/css"/>
+         <style>
+        /* Default favicon for all screen sizes */
+        link[rel="icon"] {
+            display: none; /* Hide the default favicon */
+        }
+
+        /* Favicon for small screens */
+        @media (max-width: 767px) {
+            link[rel="icon"][type="image/x-icon"] {
+                display: inline-block;
+            }
+        }
+
+        /* Favicon for medium screens */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            link[rel="icon"][type="image/png"][sizes="32x32"] {
+                display: inline-block;
+            }
+        }
+
+        /* Favicon for large screens */
+        @media (min-width: 1024px) {
+            link[rel="icon"][type="image/png"][sizes="64x64"] {
+                display: inline-block;
+            }
+        }
+    </style>
   <style>
 .main {
  text-align: center;
