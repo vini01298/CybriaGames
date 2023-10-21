@@ -1,4 +1,4 @@
-l<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <title>Settings | CybriaGames</title>
@@ -76,6 +76,7 @@ l<!DOCTYPE html>
       <h2>Cloak Tab</h2>
       <br>
       <button class="hom-button" onClick="ab()"><i class="fas fa-user-secret"></i> About:Blank</button>
+               <button class="hom-button" onClick="cnewtab()"><i class="fas fa-user-secret"></i> Chrome New Tab</button>
     </div>
   </main>
 <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
@@ -87,7 +88,7 @@ l<!DOCTYPE html>
     <script src="/js/cybriagames.js">
     </script>
   <script>
-       function ab(){
+       function ab() {
 let inFrame
 try {
     inFrame = window !== top
@@ -105,6 +106,35 @@ if (!inFrame && !navigator.userAgent.includes("Firefox")) {
         const link = doc.createElement("link")
         doc.title = "about:blank"
         link.rel = "icon";
+        iframe.src = location.href
+        style.position = "fixed"
+        style.top = style.bottom = style.left = style.right = 0
+        style.border = style.outline = "none"
+        style.width = style.height = "100%"
+        doc.body.appendChild(iframe)
+        location.replace("https://launchpad.classlink.com")
+    }
+}
+
+            function cnewtab(){
+let inFrame
+try {
+    inFrame = window !== top
+} catch (e) {
+    inFrame = true
+}
+if (!inFrame && !navigator.userAgent.includes("Firefox")) {
+    const popup = open("", "_blank")
+    if (!popup || popup.closed) {
+        alert("Popups are disabled!")
+    } else {
+        const doc = popup.document
+        const iframe = doc.createElement("iframe")
+        const style = iframe.style
+        const link = doc.createElement("link")
+        doc.title = "New Tab"
+        link.rel = "icon";
+        link.href = "/img/settings/new-tab-page.png";
         iframe.src = location.href
         style.position = "fixed"
         style.top = style.bottom = style.left = style.right = 0
