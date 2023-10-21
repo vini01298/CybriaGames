@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+l<!DOCTYPE html>
 <html>
 <head>
 <title>Settings | CybriaGames</title>
@@ -76,7 +76,7 @@
     <div class="error-container">
       <h2>Cloak Tab</h2>
       <br>
-      <button class="home-button" onClick="ab()"><i class="fas fa-spy"></i> Open About:Blank</button>
+      <button class="hom-button" onClick="ab()"><i class="fas fa-agent"></i> Open About:Blank</button>
     </div>
   </main>
 <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
@@ -88,39 +88,33 @@
     <script src="/js/cybriagames.js">
     </script>
   <script>
-            function ab() {
-            let inFrame;
-
-            try {
-                inFrame = window !== top;
-            } catch (e) {
-                inFrame = true;
-            }
-
-            if (!inFrame && !navigator.userAgent.includes("Firefox")) {
-                const popup = open("about:blank", "_blank");
-                if (!popup || popup.closed) {
-                    alert("Allow Cybriagames cloak as about:blank");
-                } else {
-                    const doc = popup.document;
-                    const iframe = doc.createElement("iframe");
-                    const style = iframe.style;
-                    const link = doc.createElement("link");
-                    const name = localStorage.getItem("name") || "about:blank";
-                    doc.title = name;
-                    link.rel = "icon";
-                    link.href = icon;
-                    iframe.src = location.href;
-                    style.position = "fixed";
-                    style.top = style.bottom = style.left = style.right = 0;
-                    style.border = style.outline = "none";
-                    style.width = style.height = "100%";
-                    doc.head.appendChild(link);
-                    doc.body.appendChild(iframe);
-                    location.replace("https://launchpad.classlink.com");
-                }
-            }
+       function ab(){
+let inFrame
+try {
+    inFrame = window !== top
+} catch (e) {
+    inFrame = true
+}
+if (!inFrame && !navigator.userAgent.includes("Firefox")) {
+    const popup = open("about:blank", "_blank")
+    if (!popup || popup.closed) {
+        alert("Activated about:blank Cloak, Close To Continue")
+    } else {
+        const doc = popup.document
+        const iframe = doc.createElement("iframe")
+        const style = iframe.style
+        const link = doc.createElement("link")
+        doc.title = "about:blank"
+        link.rel = "icon";
+        iframe.src = location.href
+        style.position = "fixed"
+        style.top = style.bottom = style.left = style.right = 0
+        style.border = style.outline = "none"
+        style.width = style.height = "100%"
+        doc.body.appendChild(iframe)
+        location.replace("https://launchpad.classlink.com")
     }
+}
   </script>
 </body>
 </html>
