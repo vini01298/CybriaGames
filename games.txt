@@ -2,6 +2,7 @@
 0hh1
 0hn0
 Slope
+A Dance Of Fire And Ice
 Getaway Shootout
 Cat Ninja
 Drive Mad
@@ -33,7 +34,7 @@ EaglercraftX 1.8
 EaglercraftX 1.5.2
 EaglercraftX 1.3
 Cluster Rush
-Worlde+
+Wordle+
 Duck Life 1
 Duck Life 2
 SM64
