@@ -4,7 +4,7 @@
 
 CybriaGames Is An Unblocked Games Website For fun. I Mean, Everyone Needs Fun Right?
 
-## Note: This is a static website, so no proxies here. CybriaGames 2 will be node. Can support proxies!
+> Note: If you see any bugs, feel free to report it on <a href="https://github.com/CybriaTech/CybriaGames/issues">Issues</a>, Report it on the <a href="https://bit.ly/cybriatech">Official CybriaTech Discord</a>, On the Widgetbot Discord or <a href="mailto:timmytamle569@gmail.com">Email Me!</a>
 
 # Deploy
 
