@@ -156,6 +156,8 @@ nav a:hover {
 }
 
 .title-search img {
+  float: left; /* Align the image to the left */
+  display: inline-block; /* Allow the text and image to be on the same line */
   align-items: center;
   text-align: center;
   width: 60px;
