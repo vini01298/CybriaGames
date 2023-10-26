@@ -74,11 +74,9 @@
   </header>
      <br>
      <form id="search-container">
-              <a class="title-search" href="/">
         <img src="/img/favicon/cybria-games-64x64.png" width="128" height="128">
         <h1>CybriaGames</h1>
-    </a>
-          <input placeholder="Search For A Game...">
+          <input placeholder="Search For A Game..." oninput="searchGames()" onkeydown="handleKeydown(event)"> 
      </form>
 <main>
 <div id="gamesContainer"><div class="game">
@@ -504,5 +502,31 @@ var msnry = new Masonry( elem, {
      <script>
           alert("Code 999, This Page Is Under Maintenance. This Is Not An Error Message.")
      </script>
+       <script>
+    // Get the input field and games container
+    const searchInput = document.getElementById("search-input");
+    const gamesContainer = document.getElementById("gamesContainer");
+
+    // Function to filter and display games
+    function searchGames() {
+      const searchText = searchInput.value.toLowerCase();
+      const games = gamesContainer.querySelectorAll(".game");
+
+      games.forEach((game) => {
+        const title = game.querySelector(".game-title").textContent.toLowerCase();
+        const shouldShow = title.includes(searchText);
+
+        game.style.display = shouldShow ? "block" : "none";
+      });
+    }
+
+    // Function to handle the Enter key press
+    function handleKeydown(event) {
+      if (event.key === "Enter") {
+        event.preventDefault(); // Prevent form submission
+        searchGames();
+      }
+    }
+  </script>
 </body>
 </html>
