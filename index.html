@@ -76,7 +76,7 @@
      <form id="search-container">
         <img src="/img/favicon/cybria-games-64x64.png" width="128" height="128">
         <h1>CybriaGames</h1>
-          <input placeholder="Search For A Game..."> 
+          <input id="search-input" placeholder="Search For A Game..."> 
      </form>
 <main>
 <div id="gamesContainer"><div class="game">
@@ -502,20 +502,28 @@ var msnry = new Masonry( elem, {
      <script>
           alert("Code 999, This Page Is Under Maintenance. This Is Not An Error Message.")
      </script>
-  <script>
-document.getElementById("input").addEventListener("input", function () {
-    const searchTerm = this.value.toLowerCase();
-    const cards = document.querySelectorAll("#gamesContainer");
+     <script>
+        // Get references to the input element and game containers
+        const searchInput = document.getElementById('search-input');
+        const gameContainers = document.querySelectorAll('.game');
 
-    cards.forEach((card) => {
-        const title = card.querySelector(".game-title").textContent.toLowerCase();
-        if (title.includes(searchTerm)) {
-            card.style.display = "block";
-        } else {
-            card.style.display = "none";
+        // Add an input event listener to trigger the search
+        searchInput.addEventListener('input', performSearch);
+
+        // Function to perform the search
+        function performSearch() {
+            const searchTerm = searchInput.value.toLowerCase();
+
+            // Iterate through game containers and check if their titles match the search term
+            gameContainers.forEach(container => {
+                const title = container.querySelector('.game-title').textContent.toLowerCase();
+                if (title.includes(searchTerm)) {
+                    container.style.display = 'block'; // Show matching game container
+                } else {
+                    container.style.display = 'none'; // Hide non-matching game container
+                }
+            });
         }
-    });
-});
-  </script>
+    </script>
 </body>
 </html>
