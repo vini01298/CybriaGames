@@ -300,7 +300,7 @@ nav a:hover {
   text-align: center;
 }
 
-#search-img {
+#search-logo {
   float: left; /* Align the image to the left */
   display: inline-block; /* Allow the text and image to be on the same line */
   width: 60px;
