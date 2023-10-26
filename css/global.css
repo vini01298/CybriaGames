@@ -164,11 +164,6 @@ nav a:hover {
   margin-right: 10px;
   vertical-align: middle;
 }
-
-#logo-title {
-    text-align: center;
-    display: inline-block; /* Allow the text and image to be on the same line */
-}
     
 #search-input {
     background: none;
