@@ -147,6 +147,10 @@ nav a:hover {
     align-items: center;
 }
 
+.title-search {
+    text-align: center;
+}
+
 #search-container input {
     background: none;
     font-family: inherit;
