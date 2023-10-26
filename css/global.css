@@ -142,23 +142,32 @@ nav a:hover {
 
 /* Search container styles */
 
-#searchContainer {
-  justify-content: flex-end;
-  display: flex;
-  background-color: #fff;
-  border-radius: 8px;
-  margin-left: auto;
-  margin-right: 20px;
-  padding: 5px;
-  width: 300px;
+#search-container {
+    text-align: center;
+    align-items: center;
 }
 
-#searchInput {
-  flex: 1;
-  border: none;
-  font-size: 16px;
-  padding: 5px;
-  background-color: transparent;
+#search-container input {
+    background: none;
+    font-family: inherit;
+    padding: 0px 17px;
+    height: 48px;
+    border: 1px solid rgb(255, 255, 255, .2);
+    color: var(--text-color);
+    border-radius: 3px;
+    outline: none;
+    width: 350px;
+    margin-top: 5px;
+    border-radius: 50px;
+    color: #FFF;
+}
+
+#search-container input:focus {
+    border: 1px solid rgba(253, 253, 253, 0.514);
+    border-radius: 6px;
+    animation: fadeInAnimation ease-in-out 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 #searchButton {
