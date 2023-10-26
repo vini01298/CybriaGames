@@ -164,7 +164,7 @@ nav a:hover {
   vertical-align: middle;
 }
     
-#search-container input {
+#search-input {
     background: none;
     font-family: inherit;
     padding: 0px 17px;
@@ -179,7 +179,7 @@ nav a:hover {
     color: #FFF;
 }
 
-#search-container input:focus {
+#search-input {
     border: 1px solid rgba(253, 253, 253, 0.514);
     border-radius: 6px;
     animation: fadeInAnimation ease-in-out 0.3s;
