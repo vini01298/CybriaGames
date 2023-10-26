@@ -501,33 +501,34 @@ var msnry = new Masonry( elem, {
      <script>
           alert("Code 999, This Page Is Under Maintenance. This Is Not An Error Message.")
      </script>
-     <script>
-// Get references to the input element and game containers
-const searchInput = document.getElementById('search-input');
-const gameContainers = document.querySelectorAll('.game');
+    <script>
+        // Get references to the input element and game containers
+        const searchInput = document.getElementById('search-input');
+        const gameContainers = document.querySelectorAll('.game');
+        const searchForm = document.getElementById('search-container');
 
-// Add an input event listener to trigger the search
-searchInput.addEventListener('input', performSearch);
+        // Add an input event listener to trigger the search
+        searchInput.addEventListener('input', performSearch);
 
-// Function to perform the search
-function performSearch() {
-    const searchTerm = searchInput.value.toLowerCase();
+        // Add a form submit event listener to prevent form submission
+        searchForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+        });
 
-    // Iterate through game containers and check if their titles match the search term
-    gameContainers.forEach(container => {
-        const title = container.querySelector('.game-title').textContent.toLowerCase();
-        if (title.includes(searchTerm)) {
-            container.style.display = 'block'; // Show matching game container
-        } else {
-            container.style.display = 'none'; // Hide non-matching game container
+        // Function to perform the search
+        function performSearch() {
+            const searchTerm = searchInput.value.toLowerCase();
+
+            // Iterate through game containers and check if their titles match the search term
+            gameContainers.forEach(container => {
+                const title = container.querySelector('.game-title').textContent.toLowerCase();
+                if (title.includes(searchTerm)) {
+                    container.style.display = 'block'; // Show matching game container
+                } else {
+                    container.style.display = 'none'; // Hide non-matching game container
+                }
+            });
         }
-    }
-}
-
-// Add a form submit event listener to prevent form submission
-searchForm.addEventListener('submit', function (event) {
-    event.preventDefault();
-});
     </script>
 </body>
 </html>
