@@ -7,6 +7,7 @@ Getaway Shootout
 Cat Ninja
 Drive Mad
 Drift Boss
+HackerTyper
 Subway Surfers - Singapore
 Geometry Dash (Scratch)
 Google Snake
