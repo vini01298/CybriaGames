@@ -1,0 +1,19 @@
+{
+  "name": "CybriaGames",
+  "version": "1.0.0",
+  "description": "CybriaGames is a static unblocked games website with 200+ games, people are able to suggest new games, report bugs and cloak tabs. If you fork, please star to support us! ",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 1",
+    "start": "npx http-server" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CybriaTech/CybriaGames.git"
+  },
+  "author": "A",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CybriaTech/CybriaGames/issues"
+  },
+  "homepage": "https://github.com/CybriaTech/CybriaGames"
+}
