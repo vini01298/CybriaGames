@@ -19,6 +19,8 @@ CybriaGames Is An Unblocked Games Website For fun. I Mean, Everyone Needs Fun Ri
 
 <a href="https://cybriagames.com/">Official Domain</a>
 
+<a href="https://cybriagames.pages.dev/">Cloudflare Pages</a>
+
 # Sources
 
 The Games Are Not Mine, They Are Copied and Pasted Into Here. These Are The People That I Got The Games From:
