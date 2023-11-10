@@ -1,10 +1,10 @@
 <center>
   
 # CybriaGames
+## Founder: X-88/mybooty165 | Owner: Scott Ferren/sc0ttferren
+CybriaGames: Your go-to site for unblocked fun because, well, who doesn't need a good time to have fun gaming?
 
-CybriaGames Is An Unblocked Games Website For fun. I Mean, Everyone Needs Fun Right?
-
-> Note: If you see any bugs, feel free to report it on <a href="https://github.com/CybriaTech/CybriaGames/issues">Issues</a>, Report it on the <a href="https://bit.ly/cybriatech">Official CybriaTech Discord</a>, On the Widgetbot Discord or <a href="mailto:timmytamle569@gmail.com">Email Me!</a>
+> Note: If you see any bugs, feel free to report it either in the <a href="https://github.com/CybriaTech/CybriaGames/issues">Issues</a>, the <a href="https://bit.ly/cybriatech">CybriaTech Discord</a>, or just <a href="mailto:timmytamle569@gmail.com">email me!</a>
 
 # Deploy
 
@@ -15,15 +15,14 @@ CybriaGames Is An Unblocked Games Website For fun. I Mean, Everyone Needs Fun Ri
 
 # Current Domains/SubDomains
 
-<a href="https://cybriagames.netlify.app">Netlify</a>
+<a href="https://cybriagames.netlify.app">Netlify | cybriagames.netlify.app</a>
 
-<a href="https://cybriagames.com/">Official Domain</a>
+<a href="https://cybriagames.com/">Official Domain | cybriagames.com</a>
 
-<a href="https://cybriagames.pages.dev/">Cloudflare Pages</a>
+<a href="https://cybriagames.pages.dev/">Cloudflare Pages | cybriagames.pages.dev</a>
 
 # Sources
-
-The Games Are Not Mine, They Are Copied and Pasted Into Here. These Are The People That I Got The Games From:
+**The games listed here aren't associated or made from us directly at all, they're embedded into our site for unblocking purposes.**
 
 - <a href="https://github.com/shadowgmes/shadowgmes.github.io">ShadowGMES</a>
 
