@@ -81,22 +81,36 @@
           <input id="search-input" placeholder="Search For A Game...">
      </form>
      
-         <style>
-        /* IMPORTANT POPUP NOTIFICATION Notification Popup */
-        .popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            z-index: 1000;
-        }
-    </style>
-    <script src="importantnotif.js"></script>
+<style>
+    /* IMPORTANT POPUP NOTIFICATION Notification Popup */
+    .popup {
+        display: none;
+        position: fixed;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px;
+        background-color: #333; /* Dark mode background color */
+        color: #fff; /* Dark mode text color */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        z-index: 1000;
+        max-width: 300px; /* Adjust the maximum width as needed */
+    }
+
+    .popup p {
+        margin-bottom: 10px;
+    }
+
+    .popup button {
+        background-color: #fff; /* Button background color */
+        color: #333; /* Button text color */
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+
 </head>
 <body>
 
