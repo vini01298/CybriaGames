@@ -57,6 +57,8 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
 <link href="/css/global.css" rel="stylesheet" type="text/css"/>
 <link href="/css/cybriagames.css" rel="stylesheet" type="text/css"/>
+     <!-- delete notification around nov 15-20th IMPORTANT POPUP NOTIFICATION -->
+<script src="/js/importantnotif.js"></script> 
 </head>
 <body>
   <header>
@@ -78,6 +80,32 @@
           </div>
           <input id="search-input" placeholder="Search For A Game...">
      </form>
+     
+         <style>
+        /* IMPORTANT POPUP NOTIFICATION Notification Popup */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            z-index: 1000;
+        }
+    </style>
+    <script src="importantnotif.js"></script>
+</head>
+<body>
+
+    <!-- Notification Popup IMPORTANT POPUP NOTIFICATION -->
+    <div class="popup" id="notificationPopup">
+        <p>The former owner of CybriaGames announced that since he is working on bigger projects, he's lost interest in CybriaGames, and now will be giving it to me, Scott Ferren to work on this project, don't worry, I can add games and fix them too.</p>
+        <button onclick="closePopup()">Got it</button>
+    </div>
+     
 <main>
 <div id="gamesContainer"><div class="game">
 <a href="/games/2048">
