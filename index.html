@@ -89,13 +89,14 @@
         top: 10%;
         left: 50%;
         transform: translateX(-50%);
-        padding: 10px;
-        background-color: #333; /* Dark mode background color */
-        color: #fff; /* Dark mode text color */
+        padding: 20px;
+        background-color: #333; /* Dark mode bg */
+        color: #fff; /* Dark mode txt color */
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         text-align: center;
         z-index: 1000;
-        max-width: 300px; /* Adjust the maximum width as needed */
+        max-width: 300px;
+        animation: slideIn 0.5s ease-in-out; /* heres cool animation for ghits and shiggles */
     }
 
     .popup p {
@@ -109,6 +110,24 @@
         border: none;
         cursor: pointer;
     }
+
+    /* animation to make it look like it came out of the sky like chicken lil'*/
+    @keyframes slideIn {
+        from {
+            transform: translate(-50%, -50%) translateY(-100%);
+        }
+        to {
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    /* Animation for sliding out too */
+    @keyframes slideOut {
+        to {
+            transform: translate(-50%, -50%) translateY(100%);
+        }
+    }
+
 </style>
 
 </head>
