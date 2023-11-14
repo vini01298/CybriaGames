@@ -57,6 +57,51 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
 <link href="/css/global.css" rel="stylesheet" type="text/css"/>
 <link href="/css/cybriagames.css" rel="stylesheet" type="text/css"/>
+<script>
+     document.addEventListener("DOMContentLoaded", function () {
+    const birthdayPopup = document.createElement("div");
+    birthdayPopup.classList.add("popup");
+    birthdayPopup.id = "birthdayPopup";
+
+    const popupContent = document.createElement("div");
+    popupContent.classList.add("popup-content");
+
+    const popupHeader = document.createElement("div");
+    popupHeader.classList.add("popup-header");
+
+    const closeButton = document.createElement("span");
+    closeButton.classList.add("close-button");
+    closeButton.id = "closePopup";
+    closeButton.innerText = "×";
+
+    const popupBody = document.createElement("div");
+    popupBody.classList.add("popup-body");
+
+    const title = document.createElement("h2");
+    title.innerText = "🎮Selling CybriaGames🕹";
+
+    const message = document.createElement("p");
+    message.innerText = "X-88 Will Add 1 Last Game, FNAF 3 Before He Officially Gives CybriaGames Away To Scott Ferren";
+
+    popupHeader.appendChild(closeButton);
+    popupBody.appendChild(title);
+    popupBody.appendChild(message);
+    popupContent.appendChild(popupHeader);
+    popupContent.appendChild(popupBody);
+    birthdayPopup.appendChild(popupContent);
+    document.body.appendChild(birthdayPopup);
+
+    birthdayPopup.style.display = "block";
+
+    closeButton.addEventListener("click", () => {
+        birthdayPopup.style.transform = "scale(0.5)";
+        birthdayPopup.style.opacity = "0";
+        setTimeout(() => {
+            birthdayPopup.style.display = "none";
+        }, 400);
+    });
+});
+</script>
 </head>
 <body>
   <header>
