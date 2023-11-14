@@ -82,7 +82,7 @@
     title.innerText = "🎮Selling CybriaGames🕹";
 
     const message = document.createElement("p");
-    message.innerText = "X-88 (CybriaGames Owner) Will Give Away CybriaGames To Sc0tt Ferren, Why? Well He Lost Interest In The Project And Is Working On Stuff Like Isotope Games And CybriaOS, Though He Will Add 1 Last Game, FNAF 3, It Was Fun While It Lasted.";
+    message.innerText = "X-88, founder of CybriaGames, has decided to pass on CybriaGames to sc0tt (Sc0tt Ferren). This decision was made because X-88 lost interest in the project and is now focusing on other projects such as Isotope Games and CybriaOS. However, before moving on, I plan to add one last game, which is be FNAF 3 to celebrate the FNAF franchise. Thank you, and good luck sc0tt.";
 
     popupHeader.appendChild(closeButton);
     popupBody.appendChild(title);
@@ -593,28 +593,7 @@ var msnry = new Masonry( elem, {
             });
         }
     </script>
-
-
-     <!-- g IMPORTANT POPUP NOTIFICATION -->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var popup = document.getElementById('notificationPopup');
-        var gotItButton = popup.querySelector('button');
-
-        // check if le user clicked the button to REMOVE THE DAMN POPUP
-        if (localStorage.getItem('popupClosed')) {
-            popup.style.display = 'none';
-        } else {
-            popup.style.display = 'block';
-        }
-
-        // Set click event for "Got it" button
-        gotItButton.addEventListener('click', function () {
-            localStorage.setItem('popupClosed', true); // literally remembers that you close that sh and does not bother you for another 3919320 years
-            closePopup();
-        });
-    });
-
+     
     function closePopup() {
         var popup = document.getElementById('notificationPopup');
         popup.style.animation = 'slideOut 0.5s ease-in-out';
