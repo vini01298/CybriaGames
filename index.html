@@ -57,52 +57,6 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
 <link href="/css/global.css" rel="stylesheet" type="text/css"/>
 <link href="/css/cybriagames.css" rel="stylesheet" type="text/css"/>
-<!-- Scott!! Delete This Like 11/16!!! -->
-<script>
-     document.addEventListener("DOMContentLoaded", function () {
-    const birthdayPopup = document.createElement("div");
-    birthdayPopup.classList.add("popup");
-    birthdayPopup.id = "birthdayPopup";
-
-    const popupContent = document.createElement("div");
-    popupContent.classList.add("popup-content");
-
-    const popupHeader = document.createElement("div");
-    popupHeader.classList.add("popup-header");
-
-    const closeButton = document.createElement("span");
-    closeButton.classList.add("close-button");
-    closeButton.id = "closePopup";
-    closeButton.innerText = "×";
-
-    const popupBody = document.createElement("div");
-    popupBody.classList.add("popup-body");
-
-    const title = document.createElement("h2");
-    title.innerText = "🎮Games Notice🕹️";
-
-    const message = document.createElement("p");
-    message.innerText = "FNAF 3 will be delayed due to deployment complications";
-
-    popupHeader.appendChild(closeButton);
-    popupBody.appendChild(title);
-    popupBody.appendChild(message);
-    popupContent.appendChild(popupHeader);
-    popupContent.appendChild(popupBody);
-    birthdayPopup.appendChild(popupContent);
-    document.body.appendChild(birthdayPopup);
-
-    birthdayPopup.style.display = "block";
-
-    closeButton.addEventListener("click", () => {
-        birthdayPopup.style.transform = "scale(0.5)";
-        birthdayPopup.style.opacity = "0";
-        setTimeout(() => {
-            birthdayPopup.style.display = "none";
-        }, 400);
-    });
-});
-</script>
 </head>
 <body>
   <header>
@@ -356,7 +310,14 @@
 <img alt="FNAF 2" src="/img/fnaf-2.webp"/>
 <p class="game-title">FNAF 2</p>
 </a>
-</div><div class="game">
+</div>
+<div class="game">
+<a href="/games/fnaf-3">
+<img alt="FNAF 3" src="/img/fnaf-3.webp"/>
+<p class="game-title">FNAF 3</p>
+</a>
+</div>
+<div class="game">
 <a href="/games/wordle-unlimited">
 <img alt="wordle unlimited" src="/img/wordle.jpg"/>
 <p class="game-title">Wordle Unlimited</p>
