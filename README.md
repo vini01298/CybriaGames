@@ -15,8 +15,6 @@ CybriaGames: Your go-to site for unblocked fun because, well, who doesn't need a
 
 # Current Domains/SubDomains
 
-<a href="https://cybriagames.com/">Official Domain | cybriagames.com</a>
-
 <a href="https://cybriagames.pages.dev/">Cloudflare Pages | cybriagames.pages.dev</a>
 
 # Sources
