@@ -1,7 +1,7 @@
 function createPopup() {
     const popupContent = document.createElement("div");
     popupContent.classList.add("popup-content");
-    popupContent.style.backgroundColor = "#333333"; 
+    popupContent.style.backgroundColor = "#333333";
     popupContent.style.color = "white";
 
     const popupHeader = document.createElement("div");
@@ -11,13 +11,13 @@ function createPopup() {
     closeButton.classList.add("close-button");
     closeButton.id = "closePopup";
     closeButton.innerText = "×";
-    closeButton.style.color = "white"; 
+    closeButton.style.color = "white";
 
     const popupBody = document.createElement("div");
     popupBody.classList.add("popup-body");
 
     const title = document.createElement("h2");
-    title.style.color = "white"; // Title text color
+    title.style.color = "white";
     title.innerText = "🎮 Changelog | Nov 17 🕹️";
 
     const changelogText = `
@@ -27,7 +27,7 @@ function createPopup() {
         `;
 
     const message = document.createElement("p");
-    message.style.color = "white"; 
+    message.style.color = "white";
     message.innerText = changelogText;
 
     const dontShowCheckbox = document.createElement("input");
@@ -37,7 +37,7 @@ function createPopup() {
 
     const checkboxLabel = document.createElement("label");
     checkboxLabel.setAttribute("for", "dontShowCheckbox");
-    checkboxLabel.style.color = "white"; // Label text color
+    checkboxLabel.style.color = "white";
     checkboxLabel.innerText = "Don't show me this until the next update";
 
     const gotItButton = document.createElement("button");
@@ -64,9 +64,16 @@ function createPopup() {
 
     const cookies = document.cookie.split(";").map(cookie => cookie.trim());
     const popupChecked = cookies.find(cookie => cookie.startsWith("popupChecked="));
+    const storedVersion = cookies.find(cookie => cookie.startsWith("version="));
+
+    const latestVersion = "1.02"; // 
 
     if (popupChecked && popupChecked.split("=")[1] === "true") {
-        popupContent.style.display = "none";
+        if (storedVersion && storedVersion.split("=")[1] === latestVersion) {
+            popupContent.style.display = "none";
+        } else {
+            popupContent.style.display = "block";
+        }
     } else {
         popupContent.style.display = "block";
     }
