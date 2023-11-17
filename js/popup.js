@@ -22,7 +22,7 @@ function createPopup() {
 
     const changelogText = `
         • Update 1: New Changelog!
-        • Update 2: Added FNAF 3 (x-88) & Monkey Mart is Fixed! 🎉 (scott)
+        • Update 2: Added FNAF 3 🐰🔪 (x-88)
         • Update 3: New support page to report & request games n' more.
         `;
 
