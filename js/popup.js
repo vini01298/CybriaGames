@@ -53,7 +53,7 @@ function createPopup() {
         const cookies = document.cookie.split(";").map(cookie => cookie.trim());
         const storedVersion = cookies.find(cookie => cookie.startsWith("version="));
 
-        const latestVersion = "1.03"; // Change to your latest version
+        const latestVersion = "1.02"; // Change to your latest version
 
         if (!(storedVersion && storedVersion.split("=")[1] === latestVersion)) {
             document.cookie = `version=${latestVersion}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
@@ -77,7 +77,7 @@ function createPopup() {
     const popupChecked = cookies.find(cookie => cookie.startsWith("popupChecked="));
     const storedVersion = cookies.find(cookie => cookie.startsWith("version="));
 
-    const latestVersion = "1.03"; 
+    const latestVersion = "1.02"; 
 
     if (popupChecked && popupChecked.split("=")[1] === "true" && storedVersion && storedVersion.split("=")[1] === latestVersion) {
         dontShowCheckbox.checked = true;
@@ -94,7 +94,7 @@ function createPopup() {
         const cookies = document.cookie.split(";").map(cookie => cookie.trim());
         const storedVersion = cookies.find(cookie => cookie.startsWith("version="));
 
-        const latestVersion = "1.03";
+        const latestVersion = "1.02";
 
         if (!(storedVersion && storedVersion.split("=")[1] === latestVersion)) {
             document.cookie = `version=${latestVersion}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
