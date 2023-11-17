@@ -13,11 +13,4 @@ document.write(`
       <a href="mailto:timmytamle569@gmail.com"><i class="fas fa-envelope"></i> Contact</a>
     </nav>
   </header>
-  <br>
-  <form id="search-container">
-    <div id="logo-title">
-      <h1>CybriaGames</h1>
-    </div>
-    <input id="search-input" placeholder="Search For A Game...">
-  </form>
 `);
