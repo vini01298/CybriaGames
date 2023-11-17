@@ -1,0 +1,9 @@
+.popup-content {
+    /* other styles for da popup boyyyy */
+    position: fixed;
+    top: 50px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    z-index: 999; /* its a popup, blud is on top of the world ey */
+    /* cool other styles for da popup */
+}
