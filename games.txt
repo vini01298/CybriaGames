@@ -32,9 +32,6 @@ Edge Surf
 Retro Bowl
 BTD
 BTD 2
-EaglercraftX 1.8
-EaglercraftX 1.5.2
-EaglercraftX 1.3
 Cluster Rush
 Wordle+
 Duck Life 1
@@ -66,8 +63,6 @@ Fruit Ninja
 FNAW
 Bloxors
 Offline Among Us
-DragonX Client 1.8
-PiClient 1.8
 Creative Kill Chamber
 Tube Jumpers
 GrindCraft
