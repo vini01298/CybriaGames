@@ -1,6 +1,7 @@
 function createPopup() {
     const popupContent = document.createElement("div");
     popupContent.classList.add("popup-content");
+    popupContent.style.backgroundColor = "#333333"; // CYBRIAGAMMEMEMEES
 
     const popupHeader = document.createElement("div");
     popupHeader.classList.add("popup-header");
