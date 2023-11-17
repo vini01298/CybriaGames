@@ -71,11 +71,10 @@ nav a:hover {
   width: 200px;
   margin: 10px;
   padding: 5px;
-  border: 0.5px solid #ddd;
-  border-radius: 10px;
+  border: none;
   text-align: center;
   background-color: #383838;
-  transition: background-color 0.3s ease;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
   overflow: hidden;
 }
 
@@ -84,7 +83,7 @@ nav a:hover {
 }
 
 .game:hover {
-  background-color: #fff;
+  transform: scale(1.05);
 }
 
 .game img {
@@ -100,7 +99,7 @@ nav a:hover {
   display: block;
   text-decoration: none;
   color: #fff;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .game:hover a {
