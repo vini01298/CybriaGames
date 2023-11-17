@@ -46,6 +46,8 @@ function createPopup() {
         const checkbox = document.getElementById("dontShowCheckbox");
         if (checkbox.checked) {
             document.cookie = "popupChecked=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+        } else {
+            document.cookie = "popupChecked=false; expires=Fri, 31 Dec 9999 23:59:59 GMT";
         }
         document.cookie = `version=1.02; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
         popupContent.style.display = "none";
@@ -66,20 +68,19 @@ function createPopup() {
     const popupChecked = cookies.find(cookie => cookie.startsWith("popupChecked="));
     const storedVersion = cookies.find(cookie => cookie.startsWith("version="));
 
-    const latestVersion = "1.01";
+    const latestVersion = "1.03"; // 
 
-    if (popupChecked && popupChecked.split("=")[1] === "true") {
-        dontShowCheckbox.checked = true; // is popupchecked = true then it'll automatically check it incase ur lazy
-        if (storedVersion && storedVersion.split("=")[1] === latestVersion) {
-            popupContent.style.display = "none";
-        } else {
-            popupContent.style.display = "block";
-        }
+    if (popupChecked && popupChecked.split("=")[1] === "true" && storedVersion && storedVersion.split("=")[1] === latestVersion) {
+        dontShowCheckbox.checked = true; // 
+        popupContent.style.display = "none";
     } else {
         popupContent.style.display = "block";
     }
 
     closeButton.addEventListener("click", () => {
+        if (!dontShowCheckbox.checked) {
+            document.cookie = "popupChecked=false; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+        }
         popupContent.style.display = "none";
     });
 }
