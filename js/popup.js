@@ -66,9 +66,10 @@ function createPopup() {
     const popupChecked = cookies.find(cookie => cookie.startsWith("popupChecked="));
     const storedVersion = cookies.find(cookie => cookie.startsWith("version="));
 
-    const latestVersion = "1.02"; // 
+    const latestVersion = "1.01";
 
     if (popupChecked && popupChecked.split("=")[1] === "true") {
+        dontShowCheckbox.checked = true; // is popupchecked = true then it'll automatically check it incase ur lazy
         if (storedVersion && storedVersion.split("=")[1] === latestVersion) {
             popupContent.style.display = "none";
         } else {
