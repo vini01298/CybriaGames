@@ -8,7 +8,7 @@ document.write(`
       <a href="https://www.buymeacoffee.com/cybriatech" target="_blank"><i class="fas fa-heart" style="color: #FF5733;"></i> Fund</a>
       <a href="https://discord.gg/e2UXEwjcsg"><i class="fab fa-discord" style="color: #7289DA;"></i> Discord</a>
       <a href="https://github.com/CybriaTech/CybriaGames"><i class="fab fa-github"></i> GitHub</a>
-      <a href="changelog.html"><i class="fas fa-wrench"></i> Changelog</a>
+      <a href="suggest.html"><i class="fas fa-plus"></i> Suggest Game</a>
       <a href="report.html"><i class="fas fa-bug"></i> Report Bugs</a> 
     </nav>
   </header>
