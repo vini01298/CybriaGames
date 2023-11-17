@@ -49,7 +49,16 @@ function createPopup() {
         } else {
             document.cookie = "popupChecked=false; expires=Fri, 31 Dec 9999 23:59:59 GMT";
         }
-        document.cookie = `version=1.02; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
+
+        const cookies = document.cookie.split(";").map(cookie => cookie.trim());
+        const storedVersion = cookies.find(cookie => cookie.startsWith("version="));
+
+        const latestVersion = "1.03"; // Change to your latest version
+
+        if (!(storedVersion && storedVersion.split("=")[1] === latestVersion)) {
+            document.cookie = `version=${latestVersion}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
+        }
+        
         popupContent.style.display = "none";
     });
 
@@ -68,10 +77,10 @@ function createPopup() {
     const popupChecked = cookies.find(cookie => cookie.startsWith("popupChecked="));
     const storedVersion = cookies.find(cookie => cookie.startsWith("version="));
 
-    const latestVersion = "1.03"; // 
+    const latestVersion = "1.03"; 
 
     if (popupChecked && popupChecked.split("=")[1] === "true" && storedVersion && storedVersion.split("=")[1] === latestVersion) {
-        dontShowCheckbox.checked = true; // 
+        dontShowCheckbox.checked = true;
         popupContent.style.display = "none";
     } else {
         popupContent.style.display = "block";
@@ -81,6 +90,16 @@ function createPopup() {
         if (!dontShowCheckbox.checked) {
             document.cookie = "popupChecked=false; expires=Fri, 31 Dec 9999 23:59:59 GMT";
         }
+
+        const cookies = document.cookie.split(";").map(cookie => cookie.trim());
+        const storedVersion = cookies.find(cookie => cookie.startsWith("version="));
+
+        const latestVersion = "1.03";
+
+        if (!(storedVersion && storedVersion.split("=")[1] === latestVersion)) {
+            document.cookie = `version=${latestVersion}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
+        }
+
         popupContent.style.display = "none";
     });
 }
