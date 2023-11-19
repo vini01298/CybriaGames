@@ -259,4 +259,9 @@ main {
   text-align: center;
 }
 
-
+/* yes custom emoji (for powered by message in the bottom of page) */
+.custom-emoji {
+  width: 20px; 
+  height: 20px; 
+  vertical-align: middle; 
+}
