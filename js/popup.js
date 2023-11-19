@@ -18,12 +18,12 @@ function createPopup() {
 
     const title = document.createElement("h2");
     title.style.color = "white";
-    title.innerText = "🎮 Changelog | Nov 17 🎉";
+    title.innerText = "🎮 Changelog | 1.04";
 
     const changelogText = `
-        • Update 1: New Changelog!
-        • Update 2: Added FNAF 3 🐰🔪 (x-88)
-        • Update 3: New support page to report & request games n' more.
+        X-88 will try to add all of the FNAF games before leaving now
+        Also, if any of the FNAF games are a bit different, ignore it for now, we'll try to fix it.
+        • NEW GAMES: FNAF 1, FNAF 4, AND UCN (ultimate custom night)
         `;
 
     const message = document.createElement("p");
@@ -53,7 +53,7 @@ function createPopup() {
         const cookies = document.cookie.split(";").map(cookie => cookie.trim());
         const storedVersion = cookies.find(cookie => cookie.startsWith("version="));
 
-        const latestVersion = "1.03"; // Change to your latest version
+        const latestVersion = "1.04"; // Change to your latest version
 
         if (!(storedVersion && storedVersion.split("=")[1] === latestVersion)) {
             document.cookie = `version=${latestVersion}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
@@ -77,7 +77,7 @@ function createPopup() {
     const popupChecked = cookies.find(cookie => cookie.startsWith("popupChecked="));
     const storedVersion = cookies.find(cookie => cookie.startsWith("version="));
 
-    const latestVersion = "1.03"; 
+    const latestVersion = "1.04"; 
 
     if (popupChecked && popupChecked.split("=")[1] === "true" && storedVersion && storedVersion.split("=")[1] === latestVersion) {
         dontShowCheckbox.checked = true;
@@ -94,7 +94,7 @@ function createPopup() {
         const cookies = document.cookie.split(";").map(cookie => cookie.trim());
         const storedVersion = cookies.find(cookie => cookie.startsWith("version="));
 
-        const latestVersion = "1.03";
+        const latestVersion = "1.04";
 
         if (!(storedVersion && storedVersion.split("=")[1] === latestVersion)) {
             document.cookie = `version=${latestVersion}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
