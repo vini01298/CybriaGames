@@ -65,12 +65,13 @@
      <script src="/js/header.js"></script>
      <script src="/js/popup.js" defer></script>
 <main>
- <div id="ad-container" style="width: 300px; height: 200px; overflow: hidden;">
-    <video id="video-ad" autoplay muted loop controls="false" style="width: 100%; height: 100%;">
+     <!-- GETAWAY AD -->
+  <div id="ad-container" style="width: 728px; height: 90px;">
+    <video id="ad-video" width="100%" height="100%" loop>
       <source src="/img/vid/getawayshootoutnew.mp4" type="video/mp4">
       Your browser does not support the video tag.
-      </video>
-    </div>
+    </video>
+  </div>
   <br>
   <form id="search-container">
     <div id="logo-title">
@@ -555,6 +556,12 @@ var msnry = new Masonry( elem, {
             });
         }
     </script>
+     <script>
+  // ADVERTISE PLAYBACK HIDE + AUTOPLAY (GETAWAY AD)
+  const video = document.getElementById('ad-video');
+  video.setAttribute('autoplay', true);
+  video.setAttribute('controls', false);
+</script>
 <footer>
   <p>CybriaTech <img src="/img/emoji/cybriatech.jpeg" alt="CybriaTech" class="custom-emoji"> </p>
   <p>SSS <img src="/img/emoji/sss.png" alt="CybriaTech" class="custom-emoji"> </p>
