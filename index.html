@@ -576,36 +576,6 @@ var msnry = new Masonry( elem, {
   video.setAttribute('autoplay', true);
   video.setAttribute('controls', false);
 </script>
-<script>
-     // FIX LOAD ISSUE INCASE! (GETAWAY AD)
-  const video = document.getElementById('ad-video');
-
-  function reloadVideo() {
-    if (video.readyState === 4 && video.currentTime === 0) {
-      video.play().catch(() => {
-        
-        video.load();
-      });
-    } else {
-      video.load(); 
-    }
-  }
-
-  
-  video.addEventListener('error', function() {
-    reloadVideo();
-  });
-
-  
-  video.addEventListener('ended', function() {
-    reloadVideo();
-  });
-
-  
-  if (video.readyState >= 1) {
-    reloadVideo();
-  }
-</script>
 <footer>
   <p>     Created By CybriaTech <img src="/img/emoji/cybriatech.jpeg" alt="CybriaTech" class="custom-emoji"> </p>
   <p>     Collaborator: Scott's Basement <img src="/img/emoji/sss.png" alt="CybriaTech" class="custom-emoji"> </p>
