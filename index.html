@@ -81,9 +81,10 @@
 <main>
 <!-- GETAWAY AD -->
 <div id="ad-container" style="width: 728px; height: 327.5px;">
-  <a href="/games/getaway-shootout-new">
+  <a id="video-link" href="/games/getaway-shootout-new">
     <video id="ad-video" width="100%" height="100%" loop muted>
       <source src="/img/vid/getawayshootoutnew.mp4" type="video/mp4">
+      <source src="/img/vid/drivemad.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </a>
@@ -577,6 +578,38 @@ var msnry = new Masonry( elem, {
   const video = document.getElementById('ad-video');
   video.setAttribute('autoplay', true);
   video.setAttribute('controls', false);
+</script>
+     <script>
+  // PICK RANDOM AD (GETAWAY AD) - called getaway ad as a code name btw dont change it!!
+  function getRandomVideoSource() {
+    const videoSources = [
+      '/img/vid/getawayshootoutnew.mp4',
+      '/img/vid/drivemad.mp4'
+    ];
+    const randomIndex = Math.floor(Math.random() * videoSources.length);
+    return videoSources[randomIndex];
+  }
+
+
+  function setRandomVideoSource() {
+    const video = document.getElementById('ad-video');
+    const videoLink = document.getElementById('video-link');
+    const randomSource = getRandomVideoSource();
+
+    // select a random ad
+    video.setAttribute('src', randomSource);
+
+    
+    if (randomSource.includes('getawayshootoutnew')) {
+      videoLink.setAttribute('href', '/games/getaway-shootout-new');
+    } else {
+      // if else set default link
+      videoLink.setAttribute('href', '/games/drive-mad');
+    }
+  }
+
+  
+  window.addEventListener('load', setRandomVideoSource);
 </script>
 <footer>
   <p>     Created By CybriaTech <img src="/img/emoji/cybriatech.jpeg" alt="CybriaTech" class="custom-emoji"> </p>
