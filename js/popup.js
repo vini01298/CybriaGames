@@ -22,7 +22,7 @@ function createPopup() {
 
     const changelogText = `
         With X-88 Resigining From CybriaGames, He Made A Sequel To His Old Priject, CybriaGames! A More Improved And Interactive Game Site Called Opium, It Is New So There Aren't A Lot Of Games But Eventually!
-        https://opium-games.pages.dev
+        <a href='https://opium-games.pages.dev'>Link!!!</a>
         `;
 
     const message = document.createElement("p");
