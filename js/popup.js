@@ -22,7 +22,9 @@ function createPopup() {
 
     const changelogText = `
         X-88 has started creating another game website named Opium, but with proxies, bookmarklets, and emulators!
-        Check out the website at: opium-games.pages.dev
+        
+        See the website at: opium-games.pages.dev
+        
         • NEW GAMES: Getaway Shootout NEW!
         `;
 
