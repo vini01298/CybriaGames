@@ -583,37 +583,31 @@ var msnry = new Masonry( elem, {
   // PICK RANDOM AD (GETAWAY AD) - called getaway ad as a code name btw dont change it!!
   function getRandomVideoSource() {
     const videoSources = [
-      '/img/vid/getawayshootoutnew.mp4',
-      '/img/vid/drivemad.mp4'
+         // scott remember to add commas after the src-link code unless it's the last one
+      { src: '/img/vid/getawayshootoutnew.mp4', link: '/games/getaway-shootout-new' },
+      { src: '/img/vid/drivemad.mp4', link: '/games/drive-mad' }
     ];
     const randomIndex = Math.floor(Math.random() * videoSources.length);
     return videoSources[randomIndex];
   }
 
-
+  
   function setRandomVideoSource() {
     const video = document.getElementById('ad-video');
     const videoLink = document.getElementById('video-link');
-    const randomSource = getRandomVideoSource();
-
-    // select a random ad
-    video.setAttribute('src', randomSource);
+    const { src: randomSource, link: randomLink } = getRandomVideoSource();
 
     
-    if (randomSource.includes('getawayshootoutnew')) {
-      videoLink.setAttribute('href', '/games/getaway-shootout-new');
-    } else {
-      // if else set default link
-      videoLink.setAttribute('href', '/games/drive-mad');
-    }
+    video.setAttribute('src', randomSource);
+    videoLink.setAttribute('href', randomLink);
   }
 
   
   window.addEventListener('load', setRandomVideoSource);
 </script>
 <footer>
-  <p>     Created By CybriaTech <img src="/img/emoji/cybriatech.jpeg" alt="CybriaTech" class="custom-emoji"> </p>
-  <p>     Collaborator: Scott's Basement <img src="/img/emoji/sss.png" alt="CybriaTech" class="custom-emoji"> </p>
+  <p>     Founded By CybriaTech <img src="/img/emoji/cybriatech.jpeg" alt="CybriaTech" class="custom-emoji"> </p>
+  <p>     Collaborated By Scott's Basement <img src="/img/emoji/sss.png" alt="CybriaTech" class="custom-emoji"> </p>
 </footer>
 </body>
 </html>
