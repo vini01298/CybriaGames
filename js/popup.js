@@ -18,11 +18,12 @@ function createPopup() {
 
     const title = document.createElement("h2");
     title.style.color = "white";
-    title.innerText = "🎮 Opium Released!";
+    title.innerText = "🎮 1.05 | Opium BETA Release";
 
     const changelogText = `
-        With X-88 Resigining From CybriaGames, He Made A Sequel To His Old Priject, CybriaGames! A More Improved And Interactive Game Site Called Opium, It Is New So There Aren't A Lot Of Games But Eventually!
-        <a href='https://opium-games.pages.dev'>Link!!!</a>
+        X-88 has started creating another game website named Opium, but with proxies, bookmarklets, and emulators!
+        Check out the website at: opium-games.pages.dev
+        • NEW GAMES: Getaway Shootout NEW!
         `;
 
     const message = document.createElement("p");
@@ -52,7 +53,7 @@ function createPopup() {
         const cookies = document.cookie.split(";").map(cookie => cookie.trim());
         const storedVersion = cookies.find(cookie => cookie.startsWith("version="));
 
-        const latestVersion = "1.04"; // Change to your latest version
+        const latestVersion = "1.05"; // Change to your latest version
 
         if (!(storedVersion && storedVersion.split("=")[1] === latestVersion)) {
             document.cookie = `version=${latestVersion}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
@@ -76,7 +77,7 @@ function createPopup() {
     const popupChecked = cookies.find(cookie => cookie.startsWith("popupChecked="));
     const storedVersion = cookies.find(cookie => cookie.startsWith("version="));
 
-    const latestVersion = "1.04"; 
+    const latestVersion = "1.05"; 
 
     if (popupChecked && popupChecked.split("=")[1] === "true" && storedVersion && storedVersion.split("=")[1] === latestVersion) {
         dontShowCheckbox.checked = true;
@@ -93,7 +94,7 @@ function createPopup() {
         const cookies = document.cookie.split(";").map(cookie => cookie.trim());
         const storedVersion = cookies.find(cookie => cookie.startsWith("version="));
 
-        const latestVersion = "1.04";
+        const latestVersion = "1.05";
 
         if (!(storedVersion && storedVersion.split("=")[1] === latestVersion)) {
             document.cookie = `version=${latestVersion}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
