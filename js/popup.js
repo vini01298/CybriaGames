@@ -18,12 +18,11 @@ function createPopup() {
 
     const title = document.createElement("h2");
     title.style.color = "white";
-    title.innerText = "🎮 Changelog | 1.04";
+    title.innerText = "🎮 Opium Released!";
 
     const changelogText = `
-        X-88 will try to add all of the FNAF games before leaving now
-        Also, if any of the FNAF games are a bit different, ignore it for now, we'll try to fix it.
-        • NEW GAMES: FNAF 1, FNAF 4, AND UCN (ultimate custom night)
+        With X-88 Resigining From CybriaGames, He Made A Sequel To His Old Priject, CybriaGames! A More Improved And Interactive Game Site Called Opium, It Is New So There Aren't A Lot Of Games But Eventually!
+        https://opium-games.pages.dev
         `;
 
     const message = document.createElement("p");
