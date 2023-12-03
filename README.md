@@ -29,4 +29,4 @@ CybriaGames: Your go-to site for unblocked fun because, well, who doesn't need a
 
 ## Huge Shoutout To the Creators Of CybriaGames
 
-<center><img src="https://contrib.rocks/image?repo=CybriaTech/CybriaGames"></center>
+<img src="https://contrib.rocks/image?repo=CybriaTech/CybriaGames">
