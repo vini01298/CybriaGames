@@ -4,14 +4,14 @@
 ## Founder: X-88/mybooty165 | Owner: Scott Ferren/sc0ttferren
 CybriaGames: Your go-to site for unblocked fun because, well, who doesn't need a good time to have fun gaming?
 
-> Note: If you see any bugs, feel free to report it either in the <a href="https://github.com/Imperium-Inc/CybriaGames/issues">Issues</a>, the <a href="https://bit.ly/Imperium Inc">Imperium Inc Discord</a>, or just <a href="mailto:timmytamle569@gmail.com">email me!</a>
+> Note: If you see any bugs, feel free to report it either in the <a href="https://github.com/Imperium-Inc/CybriaGames/issues">Issues</a>, the <a href="https://bit.ly/Imperium-Inc">Imperium Inc Discord</a>, or just <a href="mailto:timmytamle569@gmail.com">email me!</a>
 
 # Deploy
 
-[![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Imperium Inc/CybriaGames)
-[![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://replit.com/github/Imperium Inc/CybriaGames)
-[![Deploy with Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repositoryurl=https://github.com/Imperium Inc/CybriaGames)
-[![Deploy with Netlify](https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Imperium Inc/CybriaGames)
+[![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Imperium-Inc/CybriaGames)
+[![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://replit.com/github/Imperium-Inc/CybriaGames)
+[![Deploy with Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repositoryurl=https://github.com/Imperium-Inc/CybriaGames)
+[![Deploy with Netlify](https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Imperium-Inc/CybriaGames)
 
 # Current Domains/SubDomains
 
