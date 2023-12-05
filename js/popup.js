@@ -18,14 +18,10 @@ function createPopup() {
 
     const title = document.createElement("h2");
     title.style.color = "white";
-    title.innerText = "🎮 1.05 | Opium BETA Release";
+    title.innerText = "🎮 X-88 Return";
 
     const changelogText = `
-        X-88 has started creating another game website named Opium, but with proxies, bookmarklets, and emulators!
-        
-        See the website at: opium-games.pages.dev
-        
-        • NEW GAMES: Getaway Shootout NEW!
+        X-88 (Me) has returned to CybriaGames, since Scott hasn't been updating it in a while. So yea!
         `;
 
     const message = document.createElement("p");
