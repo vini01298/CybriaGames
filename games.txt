@@ -1,17 +1,57 @@
-2048
 0hh1
 0hn0
-Toss The Turtle
-Slope
+1
+1v1.LOL
+100 Player Pong
+2048
 A Dance Of Fire And Ice
-Getaway Shootout
+Age Of Confl2ict
+Alien Hominid
+Amidst The Sky
+Animator VS Animation
+A Small World Cup
+Asteroids
+Astray
+Ballistic Chickens
+Basket Bros
+Bloxors
+BTD
+BTD 2
+Burrito Bison: Launcha Libre
 Cat Ninja
-Drive Mad
+Chrome Dino
+Cluster Rush
+Cookie Clicker
+Creative Kill Chamber
+CSGO Clicker
+Doge Miner
+Dreader
 Drift Boss
-HackerTyper
-Subway Surfers - Singapore
+Drive Mad
+Duck Life 1
+Duck Life 2
+Edge Surf
+Eggy Car
+FNAF 1
+FNAF 2
+FNAF 3
+FNAF 4
+FNAF UCN
+FNAW
+Fruit Ninja
 Geometry Dash (Scratch)
+Getaway Shootout
+Getaway Shootout NEW
 Google Snake
+GrindCraft
+HackerTyper
+Minecraft Classic
+Monkey Mart
+Offline Among Us
+OvO
+OvO 2
+Paper.io 2
+Retro Bowl
 Riddle School
 Riddle School 2
 Riddle School 3
@@ -19,58 +59,19 @@ Riddle School 4
 Riddle School 5
 Riddle Transfer
 Riddle Transfer 2
-FNAF 2
-1v1.LOL
-Astray
-Alien Hominid
-Amidst The Sky
-Animator VS Animation
-Tunnel Rush
-Slope 2
-Chrome Dino
-Edge Surf
-Retro Bowl
-BTD
-BTD 2
-Cluster Rush
-Wordle+
-Duck Life 1
-Duck Life 2
-SM64
-Unfair Mario
-Ballistic Chickens
-Asteroids
-A Small World Cup
-World's Hardest Game
-CSGO Clicker
-Paper.io 2
-100 Player Pong
-Age Of Confl2ict
-Basket Bros
-Doge Miner
-Minecraft Classic
-Dreader
-OvO
 RoofTop Snipers
-Burrito Bison: Launcha Libre
-Twitch Tetris
-OvO 2
-World's Hardest Game 3
-World's Hardest Game 2
-Eggy Car
-Cookie Clicker
-Fruit Ninja
-FNAW
-Bloxors
-Offline Among Us
-Creative Kill Chamber
-Tube Jumpers
-GrindCraft
+Slope
+Slope 2
+SM64
+Sprinter
+Subway Surfers - Singapore
 The Impossible Quiz
-FNAF 3
-1
-Monkey Mart
-FNAF 4
-FNAF 1
-FNAF UCN
-Getaway Shootout NEW
+Toss The Turtle
+Tube Jumpers
+Tunnel Rush
+Twitch Tetris
+Unfair Mario
+Wordle+
+World's Hardest Game
+World's Hardest Game 2
+World's Hardest Game 3
