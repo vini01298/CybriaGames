@@ -18,11 +18,14 @@ function createPopup() {
 
     const title = document.createElement("h2");
     title.style.color = "white";
-    title.innerText = "🎮 X-88 Return";
+    title.innerText = "🎮 Update 1.06 | SC0TT";
 
     const changelogText = `
-        X-88 (Totally not Tam!) has returned to CybriaGames, since Scott hasn't been updating it in a while. So yea!
-        `;
+        X-88 will still manage this website, just adding fewer games than usual.
+        
+        Opium Website: opium-games.pages.dev
+        
+        • NEW GAMES: Sprinter`;
 
     const message = document.createElement("p");
     message.style.color = "white";
