@@ -25,7 +25,7 @@ function createPopup() {
         
         Opium Website: opium-games.pages.dev
         
-        • NEW GAMES: Sprinter`;
+        • NEW GAMES: Stickman Hook & Sprinter`;
 
     const message = document.createElement("p");
     message.style.color = "white";
@@ -54,7 +54,7 @@ function createPopup() {
         const cookies = document.cookie.split(";").map(cookie => cookie.trim());
         const storedVersion = cookies.find(cookie => cookie.startsWith("version="));
 
-        const latestVersion = "1.05"; // Change to your latest version
+        const latestVersion = "1.06"; // Change to your latest version
 
         if (!(storedVersion && storedVersion.split("=")[1] === latestVersion)) {
             document.cookie = `version=${latestVersion}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
@@ -78,7 +78,7 @@ function createPopup() {
     const popupChecked = cookies.find(cookie => cookie.startsWith("popupChecked="));
     const storedVersion = cookies.find(cookie => cookie.startsWith("version="));
 
-    const latestVersion = "1.05"; 
+    const latestVersion = "1.06"; 
 
     if (popupChecked && popupChecked.split("=")[1] === "true" && storedVersion && storedVersion.split("=")[1] === latestVersion) {
         dontShowCheckbox.checked = true;
@@ -95,7 +95,7 @@ function createPopup() {
         const cookies = document.cookie.split(";").map(cookie => cookie.trim());
         const storedVersion = cookies.find(cookie => cookie.startsWith("version="));
 
-        const latestVersion = "1.05";
+        const latestVersion = "1.06";
 
         if (!(storedVersion && storedVersion.split("=")[1] === latestVersion)) {
             document.cookie = `version=${latestVersion}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
