@@ -9,7 +9,9 @@ document.write(`
       <a href="https://discord.gg/e2UXEwjcsg"><i class="fab fa-discord" style="color: #7289DA;"></i> Discord</a>
       <a href="https://github.com/CybriaTech/CybriaGames"><i class="fab fa-github"></i> GitHub</a>
       <a href="support.html"><i class="fas fa-flag"></i> Support</a>
-      <a href="about.html"><i class="fas fa-users"></i> About Us</a> 
-    </nav>
+      <a href="https://opium-games.pages.dev" style="text-decoration: none;">
+      <img src="/img/emoji/opium32.png" alt="Opium" style="width: 16px; height: 16px; vertical-align: middle;"> Opium
+      </a>
+      </nav>
   </header>
 `);
