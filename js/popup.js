@@ -23,7 +23,7 @@ function createPopup() {
     const changelogText = `
         X-88 will still manage this website, just adding fewer games than usual.
         
-        Opium Website: opium-games.pages.dev
+        Games are now sorted by alphabetical order, which means games in a series like Riddle School are in order properly.
         
         • NEW GAMES: Stickman Hook & Sprinter`;
 
