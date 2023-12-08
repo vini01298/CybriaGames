@@ -10,7 +10,7 @@ document.write(`
       <a href="https://github.com/CybriaTech/CybriaGames"><i class="fab fa-github"></i> GitHub</a>
       <a href="support.html"><i class="fas fa-flag"></i> Support</a>
       <a href="https://opium-games.pages.dev" style="text-decoration: none;">
-      <img src="/img/emoji/opium32.png" alt="Opium" style="width: 16px; height: 16px; vertical-align: middle;"> Opium
+      <img src="/img/emoji/opium32.png" alt="Opium" style="width: 32px; height: 32px; vertical-align: middle;"> Opium
       </a>
       </nav>
   </header>
