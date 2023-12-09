@@ -2,7 +2,7 @@
   
 # CybriaGames
 ## Founder: X-88/mybooty165 | Owner: Scott Ferren/sc0ttferren
-CybriaGames: Your go-to site for unblocked fun because, well, who doesn't need a good time to have fun gaming?
+Your go-to site for unblocked fun because, well, who doesn't need a good time to have fun gaming?
 
 > Note: If you see any bugs, feel free to report it either in the <a href="https://github.com/Imperium-Inc/CybriaGames/issues">Issues</a>, the <a href="https://bit.ly/Imperium-Inc">Imperium Inc Discord</a>, or just <a href="mailto:timmytamle569@gmail.com">email me!</a>
 
@@ -15,7 +15,7 @@ CybriaGames: Your go-to site for unblocked fun because, well, who doesn't need a
 
 # Current Domains/SubDomains
 
-<a href="https://CybriaGames.pages.dev/">Cloudflare Pages | CybriaGames.pages.dev</a>
+<a href="https://cybriagames.pages.dev/">Cloudflare Pages | CybriaGames.pages.dev</a>
 
 # Sources
 **The games listed here aren't associated or made from us directly at all, they're embedded into our site for unblocking purposes.**
@@ -27,6 +27,10 @@ CybriaGames: Your go-to site for unblocked fun because, well, who doesn't need a
 - <a href="https://github.com/Parcoil/nativegames.net-v1">Native Games</a>
 </center>
 
-## Huge Shoutout To the Creators Of CybriaGames
+![Alt](https://repobeats.axiom.co/api/embed/26fd564a729fa8dbc12f1f258168e58ef59b437d.svg "Repobeats analytics image")
+
+## Contributors
 
 <img src="https://contrib.rocks/image?repo=Imperium-Inc/CybriaGames">
+
+###### Contributors are on the bottom since you can view them quicker on the side panel on the right.
