@@ -1,8 +1,15 @@
 <center>
   
 # CybriaGames
-## Founder: X-88/mybooty165 | Owner: Scott Ferren/sc0ttferren
-Your go-to site for unblocked fun because, well, who doesn't need a good time to have fun gaming?
+**Your go-to site for unblocked games and entertainment.**
+### Founder
+- **X-88**
+  - *AKA:* mybooty165
+
+### Owner
+- **SC0TT**
+  - *AKA:* sc0ttferren
+
 
 > Note: If you see any bugs, feel free to report it either in the <a href="https://github.com/Imperium-Inc/CybriaGames/issues">Issues</a>, the <a href="https://bit.ly/Imperium-Inc">Imperium Inc Discord</a>, or just <a href="mailto:timmytamle569@gmail.com">email me!</a>
 
