@@ -5,7 +5,6 @@
     font-family: Roboto;
 }
 
-[data-theme='dark'] {
 body {
   font-family: 'Roboto Condensed', Arial, sans-serif;
   background-color: #0f0f0f;
@@ -142,6 +141,8 @@ nav a:hover {
   color: #0ec2e1;
 }
 
+/* Search container styles */
+
 #search-container {
     margin-top: 10px; /* Add some top margin to separate it from the logo title */
     text-align: center;
@@ -235,239 +236,7 @@ nav a:hover {
   background-color: white;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.custom-emoji {
-  width: 20px; 
-  height: 20px; 
-  vertical-align: middle; 
-border-radius: 50%;
-}
-
-    /* light */
-[data-theme='light'] {
-    body {
-  font-family: 'Roboto Condensed', Arial, sans-serif;
-  background-color: #cccccc;
-  color: #cccccc;
-  margin: 0;
-  padding: 0;
-}
-
-/* Header styles */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #b3b3b3;
-  padding: 5px 20px; /* Reduced padding */
-}
-
-.title {
-  font-size: 0.8em;
-  color: #000000;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  transition: color 0.3s ease;
-}
-
-.title img {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end; /* Align Nav links to the right */
-  flex-grow: 1; /* Allow Nav links to grow and take up available space */
-}
-
-nav a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-  margin-left: 10px; /* Reduced margin-left */
-  margin-right: 10px;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
- color: #0095ff;
-}
-
-/* Game container styles */
-#gamesContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-.game {
-  width: 200px;
-  margin: 10px;
-  padding: 5px;
-  border: none;
-  border-radius: 5px;
-  text-align: center;
-  background-color: #383838;
-  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  overflow: hidden;
-}
-
-.game-title {
-  color: black;
-  font-size: 20px;
-}
-
-.game:hover {
-  transform: scale(1.05);
-}
-
-.game img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-  margin: auto;
-  display: block;
-}
-
-.game a {
-  display: block;
-  text-decoration: none;
-  color: #fff;
-  margin-top: 5px;
-}
-
-.game:hover a {
-  color: #333;
-}
-
-/* Category container styles */
-.categoryContainer {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 20px;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-.category {
-  text-align: center;
-  color: #fff;
-  font-size: 20px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
-}
-
-.category:hover {
-  background-color: #383838;
-}
-
-.category a {
-  display: block;
-  text-decoration: none;
-  color: #fff;
-}
-
-.category:hover a {
-  color: #0ec2e1;
-}
-
-/* Search container styles */
-
-#search-container {
-    margin-top: 10px; /* Add some top margin to separate it from the logo title */
-    text-align: center;
-    align-items: center;
-}
-
-.title-search {
-  font-size: 1em;
-  color: #000000;
-  text-decoration: none;
-  align-items: center;
-  text-align: center;
-}
-
-#search-img {
-  float: left; /* Align the image to the left */
-  display: inline-block; /* Allow the text and image to be on the same line */
-  width: 60px;
-  height: 60px;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-    
-#search-input {
-    background: none;
-    font-family: inherit;
-    padding: 0px 17px;
-    height: 48px;
-    border: 1px solid rgb(25, 25, 25, .2);
-    color: var(--text-color);
-    border-radius: 3px;
-    outline: none;
-    width: 350px;
-    margin-top: 5px;
-    border-radius: 50px;
-    color: #FFF;
-}
-
-#search-input {
-    border: 1px solid rgba(23, 23, 23, 0.514);
-    border-radius: 6px;
-    animation: fadeInAnimation ease-in-out 0.3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-.search-links {
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-.search-links:hover {
-    color: #0095ff;
-}
-
-
-/* Error container styles */
-.error-container {
-  text-align: center;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #383838;
-  border-radius: 10px;
-  width: 80%;
-}
-
-.error-container h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.error-container p {
-  font-size: 18px;
-}
-
-.error-container a.home-button {
+.hom-button {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
@@ -478,10 +247,11 @@ nav a:hover {
   transition: background-color 0.3s ease;
 }
 
-.error-container a.home-button:hover {
-  background-color: white;
+.hom-button:hover {
+    background-color: white;
 }
 
+/* CSS to center the main area */
 main {
   display: flex;
   flex-direction: column;
