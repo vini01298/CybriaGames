@@ -36,6 +36,21 @@ function openPopup(title, iconUrl) {
     }
 }
 
+function setTheme(themeName) {
+    document.documentElement.setAttribute('data-theme', themeName);
+
+    localStorage.setItem('preferredTheme', themeName);
+}
+
+// loads the theme u saved
+document.addEventListener('DOMContentLoaded', function() {
+    const preferredTheme = localStorage.getItem('preferredTheme');
+
+    if (preferredTheme !== null) {
+        document.documentElement.setAttribute('data-theme', preferredTheme); // saves theme for when u come back
+    }
+});
+
 function schoology() {
     openPopup("Home | Schoology", "/images/settings/schoology.ico");
 }
