@@ -11,8 +11,8 @@ document.write(`
       <a href="support.html"><i class="fas fa-flag"></i> Support</a>
       <a href="/settings.html"><i class="fas fa-cog"></i></a>
       <a href="https://opium-games.pages.dev" style="text-decoration: none;">
-      <img src="/img/emoji/opium32.png" alt="Opium" style="width: 32px; height: 32px; vertical-align: middle;"> Opium
-      </a>
+      <img src="/img/emoji/opium32.png" alt="Opium" style="width: 32px; height: 32px; vertical-align: middle;"> Opium</a>
+      <a href="/settings.html"><i class="fas fa-cog"></i></a>
       </nav>
   </header>
 `);
