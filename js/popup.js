@@ -18,14 +18,12 @@ function createPopup() {
 
     const title = document.createElement("h2");
     title.style.color = "white";
-    title.innerText = "🎮 Update 1.06 | SC0TT";
+    title.innerText = "🎮 Update 1.07 | SC0TT";
 
     const changelogText = `
-        X-88 will still manage this website, just adding fewer games than usual.
+        Revamped background as an inspiration from Opium Games.
         
-        Games are now sorted by alphabetical order, which means games in a series like Riddle School are in order properly.
-        
-        • NEW GAMES: Stickman Hook & Sprinter`;
+        • NEW GAMES: Doge Miner 2, Flippy Fish, and Stickman Hook`;
 
     const message = document.createElement("p");
     message.style.color = "white";
@@ -54,7 +52,7 @@ function createPopup() {
         const cookies = document.cookie.split(";").map(cookie => cookie.trim());
         const storedVersion = cookies.find(cookie => cookie.startsWith("version="));
 
-        const latestVersion = "1.06"; // Change to your latest version
+        const latestVersion = ""; // Change to your latest version
 
         if (!(storedVersion && storedVersion.split("=")[1] === latestVersion)) {
             document.cookie = `version=${latestVersion}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
@@ -78,7 +76,7 @@ function createPopup() {
     const popupChecked = cookies.find(cookie => cookie.startsWith("popupChecked="));
     const storedVersion = cookies.find(cookie => cookie.startsWith("version="));
 
-    const latestVersion = "1.06"; 
+    const latestVersion = ""; 
 
     if (popupChecked && popupChecked.split("=")[1] === "true" && storedVersion && storedVersion.split("=")[1] === latestVersion) {
         dontShowCheckbox.checked = true;
@@ -95,7 +93,7 @@ function createPopup() {
         const cookies = document.cookie.split(";").map(cookie => cookie.trim());
         const storedVersion = cookies.find(cookie => cookie.startsWith("version="));
 
-        const latestVersion = "1.06";
+        const latestVersion = "1.07";
 
         if (!(storedVersion && storedVersion.split("=")[1] === latestVersion)) {
             document.cookie = `version=${latestVersion}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
