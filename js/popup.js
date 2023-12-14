@@ -18,12 +18,18 @@ function createPopup() {
 
     const title = document.createElement("h2");
     title.style.color = "white";
-    title.innerText = "🎮 Update 1.07 | SC0TT";
+    title.innerText = "🎮 Update 1.08 | SC0TT";
 
     const changelogText = `
-        Revamped background as an inspiration from Opium Games.
+        Since cybriagames.page.dev got blocked, this will be the official one.
+        We'll also make more backup links incase if this gets blocked too in settings.
         
-        • NEW GAMES: Doge Miner 2, Flippy Fish, and Stickman Hook`;
+        Added particles background as inspiration from Opium.
+        Games that were just added will have a symbol to show it's new.*
+        
+        • NEW GAMES: Flippy Fish, Time Shooter 1-3, Doge Miner 2
+        
+        *getaway shootout new does not count.`;
 
     const message = document.createElement("p");
     message.style.color = "white";
