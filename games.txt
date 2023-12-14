@@ -5,7 +5,7 @@
 100 Player Pong
 2048
 A Dance Of Fire And Ice
-Age Of Confl2ict
+Age Of Conflict
 Alien Hominid
 Amidst The Sky
 Animator VS Animation
@@ -69,6 +69,9 @@ Sprinter
 Stickman Hook
 Subway Surfers - Singapore
 The Impossible Quiz
+Time Shooter 1
+Time Shooter 2
+Time Shooter 3
 Toss The Turtle
 Tube Jumpers
 Tunnel Rush
