@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 <title>CybriaGames</title>
@@ -146,27 +145,19 @@
     <h1>CybriaGames</h1>
   </div>
   <input id="search-input" placeholder="Search For A Game...">
-<button id="search-button" onclick="addEmojiToSearch()">&#128304;</button>
+<button id="search-button" onclick="addEmojiToSearch()">🔰 New Games</button>
 </form>
-<script>
-    const searchInput = document.getElementById('search-input');
-    const searchButton = document.getElementById('search-button');
+  <script>
+    function addEmojiToSearch() {
+      const emoji = '🔰';
+      const searchInput = document.getElementById('search-input');
+      
+      // Copy emoji to clipboard
+      navigator.clipboard.writeText(emoji);
 
-    searchInput.addEventListener('input', function() {
-      const searchTerm = searchInput.value;
-      if (searchTerm.includes('🔰')) {
-        performSearch();
-      }
-    });
-
-    searchButton.addEventListener('click', function() {
-      performSearch();
-    });
-
-    function performSearch() {
-      const searchTerm = searchInput.value.replace(/🔰/g, '');
-      // Perform search functionality here using the searchTerm
-      console.log('Searching for: ' + searchTerm);
+      // Focus on search bar and paste emoji
+      searchInput.focus();
+      document.execCommand('paste');
     }
   </script>
 <div id="gamesContainer"><div class="game">
