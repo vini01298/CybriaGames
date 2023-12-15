@@ -146,12 +146,27 @@
     <h1>CybriaGames</h1>
   </div>
   <input id="search-input" placeholder="Search For A Game...">
-<button id="search-button" onclick="addEmojiToSearch()">&#128300;</button>
+<button id="search-button" onclick="addEmojiToSearch()">&#128304;</button>
 </form>
 <script>
-function addEmojiToSearch() {
- const searchInput = document.getElementById('search-input');
-  searchInput.value += '🔰';
+    const searchInput = document.getElementById('search-input');
+    const searchButton = document.getElementById('search-button');
+
+    searchInput.addEventListener('input', function() {
+      const searchTerm = searchInput.value;
+      if (searchTerm.includes('🔰')) {
+        performSearch();
+      }
+    });
+
+    searchButton.addEventListener('click', function() {
+      performSearch();
+    });
+
+    function performSearch() {
+      const searchTerm = searchInput.value.replace(/🔰/g, '');
+      // Perform search functionality here using the searchTerm
+      console.log('Searching for: ' + searchTerm);
     }
   </script>
 <div id="gamesContainer"><div class="game">
