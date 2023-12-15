@@ -24,6 +24,23 @@
             z-index: -1;
           }
 
+          #search-input {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    #search-button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      padding: 10px 15px;
+      margin-left: 10px;
+
         /* Default favicon for all screen sizes */
         link[rel="icon"] {
             display: none; /* Hide the default favicon */
@@ -129,7 +146,14 @@
     <h1>CybriaGames</h1>
   </div>
   <input id="search-input" placeholder="Search For A Game...">
+<button id="search-button" onclick="addEmojiToSearch()">&#128300;</button>
 </form>
+<script>
+function addEmojiToSearch() {
+ const searchInput = document.getElementById('search-input');
+  searchInput.value += '🔰';
+    }
+  </script>
 <div id="gamesContainer"><div class="game">
 <a href="/games/2048">
 <img alt="2048" src="/img/2048.png"/>
@@ -187,19 +211,19 @@
 <div class="game">
 <a href="/games/ducklife3">
 <img alt="duck life 3" src="/img/duckife3.png"/>
-<p class="game-title">Duck Life 3</p>
+<p class="game-title">Duck Life 3 🔰</p>
 </a>
 </div>
 <div class="game">
 <a href="/games/ducklife4">
 <img alt="duck life 4" src="/img/ducklife4.png"/>
-<p class="game-title">Duck Life 4</p>
+<p class="game-title">Duck Life 4 🔰</p>
 </a>
 </div>
 <div class="game">
 <a href="/games/ducklife5">
 <img alt="duck life 5" src="/img/ducklife5.jpeg"/>
-<p class="game-title">Duck Life 5</p>
+<p class="game-title">Duck Life 5 🔰</p>
 </a>
 </div>
 <div class="game">
@@ -247,13 +271,13 @@
 <div class="game">
 <a href="/games/hextris">
 <img alt="hextris" src="/img/hextris.png"/>
-<p class="game-title">Hextris</p>
+<p class="game-title">Hextris 🔰</p>
 </a>
 </div>
 <div class="game">
 <a href="/games/flippy-fish">
 <img alt="flippy fish" src="/img/flippy-fish.png"/>
-<p class="game-title">Flippy Fish</p>
+<p class="game-title">Flippy Fish 🔰</p>
 </a>
 </div>
 <div class="game">
@@ -299,7 +323,7 @@
 <div class="game">
 <a href="/games/funnyshooter">
 <img alt="funny shooter" src="/img/funnyshooter.jpeg"/>
-<p class="game-title">Funny Shooter</p>
+<p class="game-title">Funny Shooter 🔰</p>
 </a>
 </div>
 <div class="game">
