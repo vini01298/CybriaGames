@@ -25,7 +25,7 @@ function createPopup() {
         We'll also make more backup links incase if this gets blocked too in settings.
         
         Added particles background as inspiration from Opium.
-        Games that were just added will have a symbol to show it's new.*
+        Games that were just added will have a symbol (🔰) to show it's new.*
         You can also check the new updates page to see all new games!
         
         • NEW GAMES: Flippy Fish, Time Shooter 1-3, Doge Miner 2, etc.
