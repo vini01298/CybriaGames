@@ -51,6 +51,7 @@ Getaway Shootout NEW
 Google Snake
 GrindCraft
 HackerTyper
+Hextris
 Minecraft Classic
 Monkey Mart
 Offline Among Us
