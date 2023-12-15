@@ -18,11 +18,12 @@
       text-align: center;
     }
 
-    title {
+    h1 {
       font-size: 50px;
       margin-bottom: 10px;
-      
-    h1 {
+    }
+    
+    h2 {
       font-size: 30px;
       margin-bottom: 10px;
     }
@@ -32,23 +33,30 @@
       margin-bottom: 20px;
     }
 
-    a {
-      color: #dffaf1;
-      margin: 10px;
-      font-size: 25px;
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 20px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      text-align: center;
       text-decoration: none;
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 5px;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .button:hover {
+      background-color: #45a049;
     }
   </style>
 </head>
 <body>
-  <title>Duck Life 3</title>
-  <h1>Pick the software you'd like to play on</h1>
+  <h1>Duck Life 3</h1>
+  <h2>Pick the software you'd like to play on</h2>
   <p>Flash is recommended for faster loading but it'll possibly glitch</p>
-  <a href="unity/index.html">Unity</a>
-  <a href="flash/index.html">Flash</a>
+  <button class="button" onclick="window.location.href='unity/index.html'">Unity</button>
+  <button class="button" onclick="window.location.href='flash/index.html'">Flash</button>
 </body>
 </html>
